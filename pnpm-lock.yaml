@@ -4,13 +4,31 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  typescript:
-    specifier: ^5.4.2
-    version: 5.4.2
-  vue:
-    specifier: ^3.4.21
-    version: 3.4.21(typescript@5.4.2)
+importers:
+
+  .:
+    dependencies:
+      '@radiant/components':
+        specifier: workspace:^
+        version: link:packages/components
+      '@radiant/theme-chalk':
+        specifier: workspace:^
+        version: link:packages/theme-chalk
+      '@radiant/utils':
+        specifier: workspace:^
+        version: link:packages/utils
+      typescript:
+        specifier: ^5.4.2
+        version: 5.4.2
+      vue:
+        specifier: ^3.4.21
+        version: 3.4.21(typescript@5.4.2)
+
+  packages/components: {}
+
+  packages/theme-chalk: {}
+
+  packages/utils: {}
 
 packages:
 

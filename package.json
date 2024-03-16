@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@radiant/components": "workspace:^",
+    "@radiant/theme-chalk": "workspace:^",
+    "@radiant/utils": "workspace:^",
     "typescript": "^5.4.2",
     "vue": "^3.4.21"
   }
