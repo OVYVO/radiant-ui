@@ -16,5 +16,8 @@
     "@radiant/utils": "workspace:^",
     "typescript": "^5.4.2",
     "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "unplugin-vue-define-options": "^1.4.2"
   }
 }

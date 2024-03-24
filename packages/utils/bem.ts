@@ -42,7 +42,8 @@ function createBEM(prefixName: string) {
     _bem(prefixName, "", element, modifier);
   const bem = (blockSuffix: string, element: string, modifier: string) =>
     _bem(prefixName, blockSuffix, element, modifier);
-  const is = (name: string, state: boolean) => (state ? `is-${name}` : ""); // 空字符串作为false的情况返回值
+  const is = (name: string, state: boolean | string) =>
+    state ? `is-${name}` : ""; // 空字符串作为false的情况返回值
 
   return {
     b,
@@ -61,7 +62,7 @@ function createBEM(prefixName: string) {
  * @param name 命名空间的名称
  * @returns 返回一个基于 BEM 方法创建的命名空间对象
  */
-function createNameSpace(name: string) {
+export function createNameSpace(name: string) {
   const prefixName = `ra-${name}`;
   return createBEM(prefixName);
 }
