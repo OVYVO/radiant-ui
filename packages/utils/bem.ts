@@ -68,7 +68,7 @@ export function createNameSpace(name: string) {
 }
 
 // 示例使用
-const bem = createNameSpace("icon");
-console.log(bem.b("button")); // 输出: ra-icon-button
-console.log(bem.e("active")); // 输出: ra-icon_active
-console.log(bem.m("hover")); // 输出: ra-icon--hover
+// const bem = createNameSpace("icon");
+// console.log(bem.b("button")); // 输出: ra-icon-button
+// console.log(bem.e("active")); // 输出: ra-icon_active
+// console.log(bem.m("hover")); // 输出: ra-icon--hover

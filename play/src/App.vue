@@ -1,8 +1,6 @@
 <template>
   <div>play</div>
-  <ra-icon></ra-icon>
+  <ra-icon :color="'red'">哈哈哈</ra-icon>
 </template>
 
-<script>
-import RaIcon from "@radiant/components/icon/src/icon.vue";
-</script>
+<script setup lang="ts"></script>
