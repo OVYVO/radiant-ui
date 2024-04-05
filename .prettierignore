@@ -1,7 +1,10 @@
-.github
-.husky
-# .vscode
-/public/**
-/node_modules/**
 **/*.svg
 **/*.sh
+
+.github
+.husky
+.vscode
+
+/public/**
+/node_modules/**
+/dist/**

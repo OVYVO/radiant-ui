@@ -16,9 +16,9 @@
     "**/*.json",
     "**/*.md",
     "**/*.yaml",
-    "node_modules/",
-    "dist/",
-    "public/",
-    "docs/"
+    "node_modules/**",
+    "dist/**",
+    "public/**",
+    "docs/**"
   ]
 }
