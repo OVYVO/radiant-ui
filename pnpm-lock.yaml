@@ -42,9 +42,6 @@ importers:
       stylelint:
         specifier: ^16.3.1
         version: 16.3.1(typescript@5.4.2)
-      stylelint-config-prettier:
-        specifier: ^9.0.5
-        version: 9.0.5(stylelint@16.3.1)
       stylelint-config-rational-order:
         specifier: ^0.1.2
         version: 0.1.2
@@ -3968,16 +3965,6 @@ packages:
 
   /style-search@0.1.0:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
-    dev: true
-
-  /stylelint-config-prettier@9.0.5(stylelint@16.3.1):
-    resolution: {integrity: sha512-U44lELgLZhbAD/xy/vncZ2Pq8sh2TnpiPvo38Ifg9+zeioR+LAkHu0i6YORIOxFafZoVg0xqQwex6e6F25S5XA==}
-    engines: {node: '>= 12'}
-    hasBin: true
-    peerDependencies:
-      stylelint: '>= 11.x < 15'
-    dependencies:
-      stylelint: 16.3.1(typescript@5.4.2)
     dev: true
 
   /stylelint-config-rational-order@0.1.2:
