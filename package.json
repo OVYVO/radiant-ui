@@ -56,7 +56,8 @@
       "prettier --write"
     ],
     "*.scss": [
-      "stylelint --fix"
+      "stylelint --fix",
+      "git add"
     ]
   }
 }
