@@ -23,6 +23,13 @@
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.24.0",
     "prettier": "^3.2.5",
+    "stylelint": "^16.3.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.2.1",
     "unplugin-vue-define-options": "^1.4.2"
   }
 }

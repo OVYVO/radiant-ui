@@ -1,6 +1,6 @@
 .github
 .husky
-.vscode
+# .vscode
 /public/**
 /node_modules/**
 **/*.svg
