@@ -1,10 +1,11 @@
-import { Plugin } from "vue";
+import { Plugin } from "vue"
+export type SFCWithInstall<T> = T & Plugin
 
-export type SFCWidthInstall<T> = T & Plugin;
+// prettier-ignore
 export function withInstall<T>(comp: T) {
-  (comp as SFCWidthInstall<T>).install = function (app) {
-    const { name } = comp as unknown as { name: string };
-    app.component(name, comp);
-  };
-  return comp as SFCWidthInstall<T>;
+  (comp as SFCWithInstall<T>).install = function (app) {
+    const { name } = comp as unknown as { name: string }
+    app.component(name, comp)
+  }
+  return comp as SFCWithInstall<T>
 }
