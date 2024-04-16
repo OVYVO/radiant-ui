@@ -1,10 +1,7 @@
 module.exports = {
-  extends: ["stylelint-config-standard", "stylelint-config-standard-scss", "stylelint-config-rational-order"],
+  extends: ["stylelint-config-standard-scss", "@ovyvo/stylelint-config"],
   rules: {
-    "block-no-empty": true,
-    "rule-empty-line-before": "never",
-    "scss/dollar-variable-pattern": null,
-    "unit-allowed-list": ["px", "vw", "vh", "%"]
+    "scss/dollar-variable-pattern": null
   },
-  plugins: ["stylelint-scss", "stylelint-order", "stylelint-config-rational-order/plugin"]
+  plugins: ["stylelint-scss"]
 }

@@ -13,6 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ovyvo/eslint-config": "^1.0.0",
+    "@ovyvo/prettier-config": "^1.0.0",
+    "@ovyvo/stylelint-config": "^1.0.0",
     "@radiant/components": "workspace:^",
     "@radiant/theme-chalk": "workspace:^",
     "@radiant/utils": "workspace:^",
@@ -46,6 +49,7 @@
       "path": "node_modules/cz-customizable"
     }
   },
+  "prettier": "@ovyvo/prettier-config",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
