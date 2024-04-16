@@ -28,14 +28,14 @@ importers:
         specifier: ^19.2.1
         version: 19.2.1(@types/node@20.12.4)(typescript@5.4.2)
       '@ovyvo/eslint-config':
-        specifier: ^1.0.0
-        version: 1.0.0(eslint-plugin-vue@9.24.0)(eslint@8.57.0)
+        specifier: ^1.0.1
+        version: 1.0.1(eslint-plugin-vue@9.24.0)(eslint@8.57.0)
       '@ovyvo/prettier-config':
-        specifier: ^1.0.0
-        version: 1.0.0(prettier@3.2.5)
+        specifier: ^1.0.1
+        version: 1.0.1(prettier@3.2.5)
       '@ovyvo/stylelint-config':
-        specifier: ^1.0.0
-        version: 1.0.0(stylelint-config-rational-order@0.1.2)(stylelint-config-standard@36.0.0)(stylelint-order@6.0.4)(stylelint@16.3.1)
+        specifier: ^1.0.1
+        version: 1.0.1(stylelint-config-rational-order@0.1.2)(stylelint-config-standard@36.0.0)(stylelint-order@6.0.4)(stylelint@16.3.1)
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.5.0
         version: 7.5.0(@typescript-eslint/parser@7.5.0)(eslint@8.57.0)(typescript@5.4.2)
@@ -853,8 +853,8 @@ packages:
       fastq: 1.17.1
     dev: true
 
-  /@ovyvo/eslint-config@1.0.0(eslint-plugin-vue@9.24.0)(eslint@8.57.0):
-    resolution: {integrity: sha512-Lomj2CHbb7Ji8t8un/Fo9vKfmZnWERN3aWh4uhBrQIA6NTKZlTYmpGyQSFHs7JYtT+S08oH3EBVA25+bzaF4ew==}
+  /@ovyvo/eslint-config@1.0.1(eslint-plugin-vue@9.24.0)(eslint@8.57.0):
+    resolution: {integrity: sha512-i3/S+sLtGF5KknvbwdkOGvjMsedZtzfhEwOWaa7DUShX6FioMgvNeSSz0kZqivQlEy9Hq8azZH5jKPzVHHd8dg==}
     peerDependencies:
       eslint: ^8.57.0
       eslint-plugin-vue: ^9.24.0
@@ -863,16 +863,16 @@ packages:
       eslint-plugin-vue: 9.24.0(eslint@8.57.0)
     dev: true
 
-  /@ovyvo/prettier-config@1.0.0(prettier@3.2.5):
-    resolution: {integrity: sha512-iUh4E1FXqsGxNQdXLKSIl1SC5AMWp1pu/JMoPiLJgFO1KpXdcazQQyosJt4lEWEJBexRL1WHdsrQ27mH/xsyeQ==}
+  /@ovyvo/prettier-config@1.0.1(prettier@3.2.5):
+    resolution: {integrity: sha512-7PY61LujcAXoBUV34BlIhD8ue35wEOqTr3BP8xx5+CZqUrCoNOL/hdB+5W4wape6AxdV7UUgdOF6kx2uGNQ98g==}
     peerDependencies:
       prettier: ^3.2.5
     dependencies:
       prettier: 3.2.5
     dev: true
 
-  /@ovyvo/stylelint-config@1.0.0(stylelint-config-rational-order@0.1.2)(stylelint-config-standard@36.0.0)(stylelint-order@6.0.4)(stylelint@16.3.1):
-    resolution: {integrity: sha512-dRy4WvvJynKtnCXX1qu/4Xd39MxDTisHVmQ0x4yxqAP/MKRFEH/up0SJ73srdC4zF7GIjWMBFa4fzRsYwLoeYg==}
+  /@ovyvo/stylelint-config@1.0.1(stylelint-config-rational-order@0.1.2)(stylelint-config-standard@36.0.0)(stylelint-order@6.0.4)(stylelint@16.3.1):
+    resolution: {integrity: sha512-GIpshXHfzijwajZsJiChsxJZrngAZtHrMwgpjN2YxOz5ttPOJxqdmjQyhSotx6v56pZdy5YMR8PxAcI4zCPZ7Q==}
     peerDependencies:
       stylelint: ^16.3.1
       stylelint-config-rational-order: ^0.1.2
@@ -1057,7 +1057,7 @@ packages:
     resolution: {integrity: sha512-b3nLFGaGkJ9rzOcuXRfHkZMdjsawuDD0ENL9fzTophtBg8FJHSGbH7daXkEpcwy3v7Xol3pAvsmlYyFhR4pqJw==}
     dependencies:
       '@types/node': 20.12.4
-      '@types/unist': 2.0.10
+      '@types/unist': 3.0.2
       '@types/vfile-message': 2.0.0
     dev: true
 
@@ -2067,7 +2067,7 @@ packages:
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
     dependencies:
       mdn-data: 2.0.30
-      source-map-js: 1.0.2
+      source-map-js: 1.2.0
     dev: true
 
   /cssesc@3.0.0:

@@ -20,9 +20,9 @@
     "vue": "^3.4.21"
   },
   "devDependencies": {
-    "@ovyvo/eslint-config": "^1.0.0",
-    "@ovyvo/prettier-config": "^1.0.0",
-    "@ovyvo/stylelint-config": "^1.0.0",
+    "@ovyvo/eslint-config": "^1.0.1",
+    "@ovyvo/prettier-config": "^1.0.1",
+    "@ovyvo/stylelint-config": "^1.0.1",
     "@commitlint/cli": "^19.2.1",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.5.0",
