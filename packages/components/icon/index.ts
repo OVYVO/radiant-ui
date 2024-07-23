@@ -1,5 +1,5 @@
 import _Icon from "./src/icon.vue"
-import { withInstall } from "@radiant/utils/widthInstall"
+import { withInstall } from "@radiant/utils/withInstall"
 
 const Icon = withInstall(_Icon)
 
