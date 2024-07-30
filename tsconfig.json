@@ -10,20 +10,13 @@
     "noLib": false, //不处理类库
     "target": "ES6", //目标版本ES6
     "sourceMap": true,
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
-    "allowSyntheticDefaultImports": true, //允许没有到处的模块中导入
+    "lib": ["ESNext", "DOM"],
+    "allowSyntheticDefaultImports": true, //允许没有导出的模块中导入
     "experimentalDecorators": true, //修饰器语法
     "forceConsistentCasingInFileNames": true, //强制区分大小写
     "resolveJsonModule": true, //解析json模块
     "strict": true, //是否开启严格模式
-    "skipLibCheck": true, //跳过类库检测
+    "skipLibCheck": true //跳过类库检测
   },
-  "exclude": [
-    "node_modules",
-    "**/_tests_",
-    "dist/**"
-  ]
+  "exclude": ["node_modules", "**/_tests_", "dist/**"]
 }
