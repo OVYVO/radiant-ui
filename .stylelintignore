@@ -1,0 +1,12 @@
+**/*.js
+**/*.cjs
+**/*.jsx
+**/*.tsx
+**/*.ts
+**/*.json
+**/*.md
+**/*.yaml
+node_modules/**
+dist/**
+public/**
+docs/**

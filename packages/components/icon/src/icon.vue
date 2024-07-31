@@ -8,7 +8,6 @@
 import { createNameSpace } from "@radiant/utils/bem"
 import { iconProps } from "./icon"
 import { computed } from "vue"
-
 defineOptions({
   name: "ra-icon"
 })

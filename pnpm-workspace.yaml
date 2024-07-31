@@ -1,4 +1,4 @@
 packages:
   - play # 调试库
   - docs # 文档库
-  - packages/** # 组件库
+  - packages/* # 组件库
