@@ -17,7 +17,8 @@
     "resolveJsonModule": true, //解析json模块
     "strict": true, //是否开启严格模式
     "skipLibCheck": true, //跳过类库检测
-    "paths": { "@jg-ui/*": ["packages/*"] }
+    "baseUrl": ".",
+    "paths": { "@radiant-ui/*": ["packages/*"] }
   },
   "exclude": ["node_modules", "**/_tests_", "dist/**"]
 }
