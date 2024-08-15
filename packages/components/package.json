@@ -1,12 +1,9 @@
 {
-  "name": "@radiant/components",
+  "name": "@radiant-ui/components",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "description": "all components",
+  "main": "index.ts",
+  "peerDependencies": {
+    "vue": "3.4.35"
+  }
 }

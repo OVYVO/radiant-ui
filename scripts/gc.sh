@@ -12,6 +12,7 @@ if [ "$#" -ne 1 ] || [[ $NAME =~ $re ]] || [ "$NAME" == "" ]; then
 fi
 
 DIRNAME="$FILE_PATH/components/$NAME"
+STYLENAME="$FILE_PATH/theme-chalk/src"
 INPUT_NAME=$NAME
 
 if [ -d "$DIRNAME" ]; then
@@ -41,7 +42,7 @@ cat > $DIRNAME/src/$INPUT_NAME.vue <<EOF
 import { ${INPUT_NAME}Props } from './$INPUT_NAME'
 
 defineOptions({
-  name: 'El$NAME',
+  name: 'radiant$NAME',
 })
 
 const props = defineProps(${INPUT_NAME}Props)
@@ -51,25 +52,30 @@ const props = defineProps(${INPUT_NAME}Props)
 EOF
 
 cat > $DIRNAME/src/$INPUT_NAME.ts <<EOF
-import { buildProps } from '@radiant-ui/utils'
+import { ExtractPropTypes, PropType } from "vue"
 
-import type { ExtractPropTypes } from 'vue'
-import type $NAME from './$INPUT_NAME.vue'
+export const ${INPUT_NAME}Props = {
+  size: [Number, String] as PropType<number | string>
+} as const
 
-export const ${INPUT_NAME}Props = buildProps({})
-
-export type ${NAME}Props = ExtractPropTypes<typeof ${INPUT_NAME}Props>
-export type ${NAME}Instance = InstanceType<typeof $NAME>
+export type ${INPUT_NAME}Propr = ExtractPropTypes<typeof ${INPUT_NAME}Props>
 EOF
 
 cat <<EOF >"$DIRNAME/index.ts"
 import { withInstall } from '@radiant-ui/utils'
-import $NAME from './src/$INPUT_NAME.vue'
+import _$NAME from './src/$INPUT_NAME.vue'
 
-export const El$NAME = withInstall($NAME)
-export default El$NAME
+const $NAME = withInstall(_$NAME)
+export default $NAME
 
 export * from './src/$INPUT_NAME'
+
+declare module "vue" {
+  export interface GlobalComponents {
+    radiant$NAME: typeof $NAME
+  }
+}
+
 EOF
 
 cat > $DIRNAME/__tests__/$INPUT_NAME.test.tsx <<EOF
@@ -87,3 +93,20 @@ describe('$NAME.vue', () => {
   })
 })
 EOF
+
+cat <<EOF >"$DIRNAME/style/css.ts"
+import '@radiant-ui/theme-chalk/radiant-$INPUT_NAME.css'
+
+EOF
+cat <<EOF >"$DIRNAME/style/index.ts"
+import '@radiant-ui/theme-chalk/radiant-$INPUT_NAME.css'
+
+EOF
+
+cat <<EOF >"$STYLENAME/$INPUT_NAME.scss"
+.radiant-$INPUT_NAME{
+
+}
+EOF
+
+

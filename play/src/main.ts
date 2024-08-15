@@ -1,10 +1,14 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+//@ts-nocheck
 
-import Icon from "@radiant/components/icon";
+import { createApp } from "vue"
+import App from "./App.vue"
+import "./style.css"
 
-const plugins = [Icon];
-const app = createApp(App);
-plugins.forEach((plugin) => app.use(plugin));
+import Button from "@radiant-ui/components/button"
+import "@radiant-ui/theme-chalk"
 
-app.mount("#app");
+const plugins = [Button]
+const app = createApp(App)
+plugins.forEach(plugin => app.use(plugin))
+
+app.mount("#app")
