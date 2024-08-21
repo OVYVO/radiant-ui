@@ -1,7 +1,7 @@
 import globals from "globals"
 import pluginJs from "@eslint/js"
 import tseslint from "typescript-eslint"
-import pluginVue, { rules } from "eslint-plugin-vue"
+import pluginVue from "eslint-plugin-vue"
 
 export default [
   { files: ["**/*.{js,mjs,cjs,ts,vue}"] },
@@ -22,7 +22,7 @@ export default [
   },
   {
     rules: {
-      "@typescript-eslint/ban-ts-comment": false
+      "@typescript-eslint/ban-ts-comment": "off"
     }
   },
   {
