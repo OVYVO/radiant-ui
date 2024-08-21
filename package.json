@@ -12,8 +12,10 @@
     "gen": "bash ./scripts/gc.sh",
     "del": "bash ./scripts/del.sh",
     "preview": "pnpm -C play dev",
-    "format": "prettier --write --cache .",
-    "lint": "npx eslint .",
+    "lint:prettier": "prettier --write --cache .",
+    "lint:eslint": "npx eslint .",
+    "lint:stylelint": "stylelint \"**/*.css\"",
+    "commitlint": "commitlint --edit",
     "docs:dev": "vitepress dev doc --host",
     "docs:build": "vitepress build doc",
     "docs:preview": "vitepress preview doc"
