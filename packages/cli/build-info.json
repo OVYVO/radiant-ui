@@ -1,7 +1,7 @@
 {
   "name": "radiant-ui",
   "version": "0.0.1",
-  "description": "巨耕公共组件库",
+  "description": "Radiant公共组件库",
   "keywords": ["component library", "ui framework", "ui", "vue", "vue3"],
   "author": "yangang@jugeng.com",
   "repository": {

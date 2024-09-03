@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "RadiantUI"
-  text: "巨耕前端组件库"
+  text: "Radiant前端组件库"
   tagline: My great project tagline
   actions:
     - theme: brand

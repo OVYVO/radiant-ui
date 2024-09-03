@@ -2,8 +2,8 @@ import { defineConfig } from "vitepress"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "巨耕UI",
-  description: "巨耕前端组件库",
+  title: "RadiantUI",
+  description: "Radiant前端组件库",
   themeConfig: {
     logo: "/logo.png",
     // https://vitepress.dev/reference/default-theme-config

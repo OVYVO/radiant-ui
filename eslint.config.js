@@ -11,7 +11,6 @@ export default [
   ...pluginVue.configs["flat/essential"],
   {
     files: ["**/*.vue"],
-    parser: "vue-eslint-parser",
     languageOptions: { parserOptions: { parser: tseslint.parser } },
     rules: {
       "vue/html-self-closing": "off",
