@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "build": "unbuild",
+    "build:utils": "unbuild && gulp --require @esbuild-kit/cjs-loader",
     "dev": "pnpm run stub",
     "stub": "unbuild --stub"
   },

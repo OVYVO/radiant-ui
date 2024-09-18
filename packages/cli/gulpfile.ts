@@ -1,12 +1,18 @@
 import type { TaskFunction } from "gulp"
-import { parallel, series, dest, src } from "gulp"
+import { series, dest, src } from "gulp"
 import rename from "gulp-rename"
 
 import { run } from "./utils/process"
-import { projRoot, cliPath, themeChalkPath, hooksPath, outPutDir } from "./utils/path"
+import { projRoot, cliPath, themeChalkPath, utilsPath, hooksPath, outPutDir } from "./utils/path"
 
 const clean = async () => {
   await run("pnpm clean", projRoot)
+}
+const buildUtils = async () => {
+  await run("pnpm build:utils", utilsPath)
+}
+const buildHooks = async () => {
+  await run("pnpm build:hooks", hooksPath)
 }
 const buildEs = async () => {
   await run("pnpm build:es", cliPath)
@@ -18,12 +24,8 @@ const buildLib = async () => {
   await run("pnpm build:lib", cliPath)
 }
 const buildThemeChalk = async () => {
-  await run("pnpm build", themeChalkPath)
+  await run("pnpm build:theme", themeChalkPath)
 }
-const buildHooks = async () => {
-  await run("pnpm build", hooksPath)
-}
-
 const copyPackage = () => {
   return src("./build-info.json")
     .pipe(
@@ -33,14 +35,20 @@ const copyPackage = () => {
     )
     .pipe(dest(outPutDir))
 }
-
 const copyLicense = async () => {
   return src("../../LICENSE").pipe(dest(outPutDir))
 }
 
 export const build: TaskFunction = series(
   clean,
-  parallel(buildEs, buildCjs, buildLib, buildThemeChalk, buildHooks, copyPackage, copyLicense)
+  buildUtils,
+  buildHooks,
+  buildThemeChalk,
+  buildEs,
+  buildCjs,
+  buildLib,
+  copyPackage,
+  copyLicense
 )
 
 export default build

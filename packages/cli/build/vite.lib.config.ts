@@ -22,6 +22,7 @@ export default defineConfig({
   ],
   build: {
     outDir: OUTDIR_PATH,
+    emptyOutDir: false,
     lib: {
       entry: ENTRY_PATH,
       formats: ["umd", "iife"],
@@ -29,7 +30,7 @@ export default defineConfig({
       fileName: format => `radiant-ui.${format}.js`
     },
     rollupOptions: {
-      external: ["vue", /@radiant-ui\/*/]
+      external: ["vue"]
     }
   }
 })

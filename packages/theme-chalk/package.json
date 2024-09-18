@@ -9,7 +9,7 @@
   "unpkg": "dist/index.css",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "gulp --require @esbuild-kit/cjs-loader"
+    "build:theme": "gulp --require @esbuild-kit/cjs-loader"
   },
   "license": "MIT",
   "devDependencies": {
