@@ -3,7 +3,7 @@ import { parallel, series, dest, src } from "gulp"
 import rename from "gulp-rename"
 
 import { run } from "./utils/process"
-import { projRoot, cliPath, themeChalkPath, outPutDir } from "./utils/path"
+import { projRoot, cliPath, themeChalkPath, hooksPath, outPutDir } from "./utils/path"
 
 const clean = async () => {
   await run("pnpm clean", projRoot)
@@ -19,6 +19,9 @@ const buildLib = async () => {
 }
 const buildThemeChalk = async () => {
   await run("pnpm build", themeChalkPath)
+}
+const buildHooks = async () => {
+  await run("pnpm build", hooksPath)
 }
 
 const copyPackage = () => {
@@ -37,7 +40,7 @@ const copyLicense = async () => {
 
 export const build: TaskFunction = series(
   clean,
-  parallel(buildEs, buildCjs, buildLib, buildThemeChalk, copyPackage, copyLicense)
+  parallel(buildEs, buildCjs, buildLib, buildThemeChalk, buildHooks, copyPackage, copyLicense)
 )
 
 export default build

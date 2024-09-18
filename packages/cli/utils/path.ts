@@ -7,5 +7,6 @@ export const componentsPath = resolve(compRoot, "components")
 export const utilsPath = resolve(compRoot, "utils")
 export const themeChalkPath = resolve(compRoot, "theme-chalk")
 export const cliPath = resolve(compRoot, "cli")
+export const hooksPath = resolve(compRoot, "hooks")
 
 export const outPutDir = resolve(projRoot, "dist")
