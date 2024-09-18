@@ -1,0 +1,25 @@
+{
+  "name": "@radiant/hooks",
+  "version": "1.0.0",
+  "description": "radiant vue hooks",
+  "license": "MIT",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "unbuild && gulp --require @esbuild-kit/cjs-loader"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0"
+  }
+}
