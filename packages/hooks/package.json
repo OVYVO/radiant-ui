@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "build:hooks": "unbuild && gulp --require @esbuild-kit/cjs-loader"
+    "build:hooks": "unbuild"
   },
   "peerDependencies": {
     "vue": "^3.4.31"
