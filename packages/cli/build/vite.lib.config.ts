@@ -1,6 +1,6 @@
 import { defineConfig } from "vite"
 import { resolve } from "node:path"
-import { projRoot, componentsPath, cliPath } from "../utils/path"
+import { projRoot, componentsPath } from "../utils/path"
 
 import vue from "@vitejs/plugin-vue"
 import dts from "vite-plugin-dts"
@@ -29,7 +29,7 @@ export default defineConfig({
       fileName: format => `radiant-ui.${format}.js`
     },
     rollupOptions: {
-      external: ["vue"]
+      external: ["vue", /@radiant-ui\/*/]
     }
   }
 })

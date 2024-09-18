@@ -30,7 +30,7 @@ export default defineConfig({
       formats: ["es"]
     },
     rollupOptions: {
-      external: ["vue"],
+      external: ["vue", /@radiant-ui\/*/],
       output: {
         preserveModules: true,
         preserveModulesRoot: ENTRY_PATH,
