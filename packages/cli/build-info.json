@@ -21,6 +21,14 @@
       "types": "./types/index.d.ts",
       "import": "./es/index.js",
       "require": "./lib/index.cjs"
+    },
+    "./es/*": {
+      "types": "./types/*/src/*.d.ts",
+      "import": "./es/*.js"
+    },
+    "./lib/*.js": {
+      "types": "./types/*/src/*.d.ts",
+      "require": "./lib/*.cjs"
     }
   },
   "unpkg": "radiant-ui.iife.js",
