@@ -1,0 +1,14 @@
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+
+  --vp-home-hero-image-color: transparent;
+  --vp-home-hero-image-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+}
+
+.VPImage.image-src {
+  top: 60% !important;
+}
+.VPFeatures {
+  margin-bottom: 40px;
+}
