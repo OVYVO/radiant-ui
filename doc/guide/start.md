@@ -73,7 +73,7 @@ app.mount("#app")
 </template>
 <script>
 import { RaButton } from "radiant-ui"
-import "radiant-ui/theme-chalk/src/jg-button.css"
+import "radiant-ui/theme-chalk/src/ra-button.css"
 export default {
   components: { RaButton }
 }
