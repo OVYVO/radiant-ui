@@ -1,5 +1,5 @@
 import path from "path"
-import { dest, parallel, series, src } from "gulp"
+import { dest, series, src } from "gulp"
 import gulpSass from "gulp-sass"
 import dartSass from "sass"
 import autoprefixer from "gulp-autoprefixer"
@@ -9,8 +9,9 @@ import cssnano from "gulp-cssnano"
 import { deleteAsync } from "del"
 
 const distRootFolder = path.resolve(__dirname, "dist")
-const distSrcFolder = path.resolve(distRootFolder, "src")
-const distBundleRoot = path.resolve(__dirname, "../../dist/theme-chalk")
+const distSrcFolder = path.resolve(__dirname, "dist/src")
+const distBundleFolder = path.resolve(__dirname, "../../dist/theme-chalk")
+const distBundleRootFolder = path.resolve(__dirname, "../../dist")
 
 const clean = async () => {
   await deleteAsync(["dist"])
@@ -18,15 +19,15 @@ const clean = async () => {
 
 const buildThemeChalk = () => {
   const sass = gulpSass(dartSass)
-  const noradiantPrefixFile = /(index|base|display)/
+  const noJgPrefixFile = /(index|base|display)/
   return src(path.resolve(__dirname, "src/*.scss"))
     .pipe(sass.sync())
     .pipe(autoprefixer({ cascade: false }))
     .pipe(cssnano())
     .pipe(
       rename(path => {
-        if (!noradiantPrefixFile.test(path.basename)) {
-          path.basename = `radiant-${path.basename}`
+        if (!noJgPrefixFile.test(path.basename)) {
+          path.basename = `jg-${path.basename}`
         }
       })
     )
@@ -36,7 +37,10 @@ const buildThemeChalk = () => {
 }
 
 const copyThemeChalkBundleSrc = () => {
-  return src(`${distRootFolder}/**`).pipe(dest(distBundleRoot))
+  return src(`${distRootFolder}/**`).pipe(dest(distBundleFolder))
+}
+const copyThemeChalkDistRoot = () => {
+  return src(`${distRootFolder}/index.css`).pipe(dest(distBundleRootFolder))
 }
 
-export default parallel(series(clean, buildThemeChalk, copyThemeChalkBundleSrc))
+export default series(clean, buildThemeChalk, copyThemeChalkBundleSrc, copyThemeChalkDistRoot)
