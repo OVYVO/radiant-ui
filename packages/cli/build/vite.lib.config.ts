@@ -30,7 +30,13 @@ export default defineConfig({
       fileName: format => `radiant-ui.${format}.js`
     },
     rollupOptions: {
-      external: ["vue"]
+      external: ["vue", "@jg-ui/utils"],
+      output: {
+        globals: {
+          ["vue"]: "Vue",
+          ["@jg-ui/utils"]: "JguiUtils"
+        }
+      }
     }
   }
 })
