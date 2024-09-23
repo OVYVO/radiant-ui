@@ -12,3 +12,16 @@
 .VPFeatures {
   margin-bottom: 40px;
 }
+
+.vp-doc table {
+  margin: 0;
+  border-collapse: unset !important;
+}
+.vp-doc th,
+.vp-doc td {
+  border: 0;
+}
+
+.el-button:focus-visible {
+  outline: unset !important;
+}
