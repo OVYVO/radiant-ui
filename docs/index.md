@@ -39,7 +39,7 @@ const members = [
   },
   {
     avatar: '/avator_girl1.png',
-    name: '',
+    name: '...',
     title: 'Developer',
     links: [
       { icon: 'github', link: '' }
@@ -47,7 +47,7 @@ const members = [
   },
   {
     avatar: '/avator_boy2.png',
-    name: '',
+    name: '...',
     title: 'Developer',
     links: [
       { icon: 'github', link: '' }

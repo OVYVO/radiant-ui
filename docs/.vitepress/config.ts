@@ -21,7 +21,7 @@ export default defineConfig({
     },
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright © 2024-present YanGang"
+      copyright: "Copyright © 2024-present RyanYan"
     },
     socialLinks: [{ icon: "github", link: "https://github.com/OVYVO/radiant-ui" }]
   },
