@@ -9,7 +9,7 @@ export default defineConfig({
   // outDir: "../public", //gitlab静态部署时打开
   title: "前端组件库",
   description: "前端组件库",
-  head: [["link", { rel: "icon", href: "/logo.png" }]],
+  head: [["link", { rel: "icon", href: "/radiant-ui/logo.png" }]],
   // https://vitepress.dev/reference/default-theme-config
   themeConfig: {
     siteTitle: "Radiant-UI",
