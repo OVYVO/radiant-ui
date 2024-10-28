@@ -11,7 +11,7 @@ lastUpdated: true
 ## 基础用法
 
 <script setup>
-import JgActbtn from '@components/button/src/button.vue'
+import RaActbtn from '@components/button/src/button.vue'
 const propsData = [
   {
     params: "actType",
@@ -38,21 +38,21 @@ const propsData = [
 
 </script>
 
-<jg-actbtn actType="input" type="danger"></jg-actbtn>
-<jg-actbtn actType="export" type="warning"></jg-actbtn>
-<jg-actbtn exportAll ></jg-actbtn>
+<ra-actbtn actType="input" type="danger"></ra-actbtn>
+<ra-actbtn actType="export" type="warning"></ra-actbtn>
+<ra-actbtn exportAll ></ra-actbtn>
 
 ::: code-group
 
 ```vue [javascript]
 <template>
-  <jg-actbtn actType="input" type="danger"></jg-actbtn>
-  <jg-actbtn actType="export" type="warning"></jg-actbtn>
-  <jg-actbtn exportAll></jg-actbtn>
+  <ra-actbtn actType="input" type="danger"></ra-actbtn>
+  <ra-actbtn actType="export" type="warning"></ra-actbtn>
+  <ra-actbtn exportAll></ra-actbtn>
 </template>
 
 <script setup>
-import { JgActButton } from "jg-ui"
+import { RaActButton } from "radiant-ui"
 </script>
 ```
 
@@ -60,13 +60,13 @@ import { JgActButton } from "jg-ui"
 
 ## 添加前缀
 
-<jg-actbtn actType="input" suffix="手动"></jg-actbtn>
+<ra-actbtn actType="input" suffix="手动"></ra-actbtn>
 
 ::: code-group
 
 ```vue [javascript]
 <template>
-  <jg-actbtn actType="input" suffix="手动"></jg-actbtn>
+  <ra-actbtn actType="input" suffix="手动"></ra-actbtn>
 </template>
 ```
 
