@@ -69,11 +69,11 @@ app.mount("#app")
 
 ```vue
 <template>
-  <jg-button>我是 RaButton</jg-button>
+  <ra-button>我是 RaButton</ra-button>
 </template>
 <script>
-import { RaButton } from "@ovyvo/radiant-ui/"
-import "@ovyvo/radiant-ui/theme-chalk/src/jg-button.css"
+import { RaButton } from "@ovyvo/radiant-ui"
+import "@ovyvo/radiant-ui/theme-chalk/src/ra-button.css"
 export default {
   components: { RaButton }
 }
