@@ -5,7 +5,7 @@ import path from "path"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // base: "/gh-page/",  //gitlab静态部署时打开
+  base: "/radiant-ui/", //gitlab静态部署时打开
   // outDir: "../public", //gitlab静态部署时打开
   title: "前端组件库",
   description: "前端组件库",
