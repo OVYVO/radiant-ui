@@ -28,9 +28,12 @@ features:
 
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
+import AvatorBoy1 from './public/avator_boy1.png'
+import AvatorGirl1 from './public/avator_girl1.png'
+import AvatorBoy2 from './public/avator_boy2.png'
 const members = [
   {
-    avatar: '/avator_boy1.png',
+    avatar: AvatorBoy1,
     name: 'RyanYan',
     title: 'Creator',
     links: [
@@ -38,7 +41,7 @@ const members = [
     ]
   },
   {
-    avatar: '/avator_girl1.png',
+    avatar: AvatorGirl1,
     name: '...',
     title: 'Developer',
     links: [
@@ -46,7 +49,7 @@ const members = [
     ]
   },
   {
-    avatar: '/avator_boy2.png',
+    avatar: AvatorBoy2,
     name: '...',
     title: 'Developer',
     links: [
