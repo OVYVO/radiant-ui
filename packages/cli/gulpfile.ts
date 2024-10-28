@@ -3,11 +3,8 @@ import { series, dest, src } from "gulp"
 import rename from "gulp-rename"
 
 import { run } from "./utils/process"
-import { projRoot, cliPath, themeChalkPath, utilsPath, hooksPath, outPutDir } from "./utils/path"
+import { cliPath, themeChalkPath, utilsPath, hooksPath, outPutDir } from "./utils/path"
 
-const clean = async () => {
-  await run("pnpm clean", projRoot)
-}
 const buildUtils = async () => {
   await run("pnpm build:utils", utilsPath)
 }
@@ -40,7 +37,6 @@ const copyLicense = async () => {
 }
 
 export const build: TaskFunction = series(
-  clean,
   buildUtils,
   buildHooks,
   buildThemeChalk,

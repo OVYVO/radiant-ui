@@ -2,15 +2,15 @@
   "name": "radiant-ui",
   "version": "0.0.1",
   "description": "Radiant公共组件库",
-  "keywords": ["component library", "ui framework", "ui", "vue", "vue3"],
-  "author": "yangang@jugeng.com",
+  "keywords": ["component library", "ui framework", "vue", "vue3"],
+  "author": "vue12306@163.com",
   "repository": {
     "type": "git",
-    "url": "http://192.168.100.91:82/jugeng/web/common/radiant-ui"
+    "url": "https://github.com/OVYVO/radiant-ui"
   },
-  "homepage": "http://192.168.100.91:82/jugeng/web/common/radiant-ui",
+  "homepage": "https://github.com/OVYVO/radiant-ui",
   "bugs": {
-    "url": "http://192.168.100.91:82/jugeng/web/common/radiant-ui/issues"
+    "url": "https://github.com/OVYVO/radiant-ui/issues"
   },
   "license": "MIT",
   "main": "lib/index.cjs",

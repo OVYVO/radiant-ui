@@ -30,7 +30,7 @@ export default defineConfig({
       formats: ["cjs"]
     },
     rollupOptions: {
-      external: ["vue"],
+      external: ["vue", "element-plus"],
       output: {
         preserveModules: true,
         preserveModulesRoot: ENTRY_PATH,
