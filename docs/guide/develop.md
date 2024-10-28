@@ -18,7 +18,7 @@ lastUpdated: true
 ### 依赖安装
 
 ::: warning
-组件库项目底层架构依赖pnpm，因此不允许使用其他包管理工具，请自行防止开发风险。
+组件库项目底层架构依赖pnpm，因此不允许使用其他包管理工具，请自行规避开发风险。
 :::
 
 ```sh
@@ -47,7 +47,7 @@ pnpm preview
 
 ### 文档预览
 
-文档环境为基于vitepress生成静态网站
+基于vitepress生成静态网站，方便预览项目文档
 
 ```sh
 pnpm docs:dev

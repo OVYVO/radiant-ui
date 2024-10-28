@@ -11,12 +11,12 @@ const guideBarList = [
 const compBarList = [
   {
     text: "基础组件",
-    items: [{ text: "按钮", link: "/comp/button" }]
-  },
-  {
-    text: "页面组件",
-    items: []
+    items: [{ text: "Actbtn按钮", link: "/comp/actBtn" }]
   }
+  // {
+  //   text: "页面组件",
+  //   items: []
+  // }
 ]
 
 export const sidebar = {

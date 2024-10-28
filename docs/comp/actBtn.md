@@ -17,38 +17,38 @@ const propsData = [
     params: "actType",
     desc:"按钮类型",
     paramType:"String<'input' | 'export'>",
-    canEmpty:"非必填",
+    canEmpty:"false",
     initValue:"input"
   },
   {
     params: "suffix",
     desc:"按钮前缀",
     paramType:"String",
-    canEmpty:"非必填",
+    canEmpty:"false",
     initValue:"-"
   },
   {
     params: "exportAll",
     desc:"导出全部",
     paramType:"Boolean",
-    canEmpty:"非必填",
+    canEmpty:"false",
     initValue:"-"
   }
 ]
 
 </script>
 
-<ra-actbtn actType="input" type="danger"></ra-actbtn>
-<ra-actbtn actType="export" type="warning"></ra-actbtn>
-<ra-actbtn exportAll ></ra-actbtn>
+<jg-actbtn actType="input" type="danger"></jg-actbtn>
+<jg-actbtn actType="export" type="warning"></jg-actbtn>
+<jg-actbtn exportAll ></jg-actbtn>
 
 ::: code-group
 
 ```vue [javascript]
 <template>
-  <ra-actbtn actType="input" type="danger"></ra-actbtn>
-  <ra-actbtn actType="export" type="warning"></ra-actbtn>
-  <ra-actbtn exportAll></ra-actbtn>
+  <jg-actbtn actType="input" type="danger"></jg-actbtn>
+  <jg-actbtn actType="export" type="warning"></jg-actbtn>
+  <jg-actbtn exportAll></jg-actbtn>
 </template>
 
 <script setup>
@@ -60,13 +60,13 @@ import { JgActButton } from "jg-ui"
 
 ## 添加前缀
 
-<ra-actbtn actType="input" suffix="手动"></ra-actbtn>
+<jg-actbtn actType="input" suffix="手动"></jg-actbtn>
 
 ::: code-group
 
 ```vue [javascript]
 <template>
-  <ra-actbtn actType="input" suffix="手动"></ra-actbtn>
+  <jg-actbtn actType="input" suffix="手动"></jg-actbtn>
 </template>
 ```
 

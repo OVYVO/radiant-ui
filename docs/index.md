@@ -31,16 +31,32 @@ import { VPTeamMembers } from 'vitepress/theme'
 const members = [
   {
     avatar: '/avator_boy1.png',
-    name: 'RyanYan',
+    name: 'yangang',
     title: 'Creator',
     links: [
       { icon: 'github', link: 'https://github.com/OVYVO' }
+    ]
+  },
+  {
+    avatar: '/avator_girl1.png',
+    name: '',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: '' }
+    ]
+  },
+  {
+    avatar: '/avator_boy2.png',
+    name: '',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: '' }
     ]
   }
 ]
 </script>
 
-# 贡献者
+## 贡献者
 
 ::: tip
 🎉🎉🎉欢迎加入我们，并期待您对此组件库做出贡献🎉🎉🎉

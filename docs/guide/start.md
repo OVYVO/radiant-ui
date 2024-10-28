@@ -23,15 +23,15 @@ lastUpdated: true
 ::: code-group
 
 ```sh [npm]
-$ npm add radiant-ui@latest
+$ npm add @ovyvo/radiant-ui@latest
 ```
 
 ```sh [pnpm]
-$ pnpm add radiant-ui@latest
+$ pnpm add @ovyvo/radiant-ui@latest
 ```
 
 ```sh [yarn]
-$ yarn add radiant-ui@latest
+$ yarn add @ovyvo/radiant-ui@latest
 ```
 
 :::
@@ -54,9 +54,9 @@ import "element-plus/dist/index.css"
 ```javascript
 // main.ts
 import { createApp } from "vue"
-import RadiantUI from "radiant-ui"
+import RadiantUI from "@ovyvo/radiant-ui"
 import "element-plus/dist/index.css"
-import "radiant-ui/dist/index.css"
+import "@ovyvo/radiant-ui/dist/index.css"
 import App from "./App.vue"
 
 const app = createApp(App)
@@ -69,18 +69,18 @@ app.mount("#app")
 
 ```vue
 <template>
-  <ra-button>我是 RaButton</ra-button>
+  <jg-button>我是 RaButton</jg-button>
 </template>
 <script>
-import { RaButton } from "radiant-ui"
-import "radiant-ui/theme-chalk/src/ra-button.css"
+import { RaButton } from "@ovyvo/radiant-ui/"
+import "@ovyvo/radiant-ui/theme-chalk/src/jg-button.css"
 export default {
   components: { RaButton }
 }
 </script>
 ```
 
-## 优化
+## 规划
 
 - 解决按需自动引入问题
 - 解决样式依赖elment-plus引入问题
