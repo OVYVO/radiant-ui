@@ -1,7 +1,24 @@
 import type { ExtractPropTypes, PropType } from "vue"
 
 export const buttonProps = {
-  size: [Number, String] as PropType<number | string>
+  actType: {
+    type: String as PropType<"input" | "export">,
+    default: "input",
+    validator: (value: string) => {
+      return ["input", "export"].includes(value)
+    }
+  },
+  suffix: {
+    type: String as PropType<String>,
+    default: ""
+  },
+  exportAll: {
+    type: Boolean as PropType<Boolean>
+  }
 } as const
 
-export type buttonPropr = ExtractPropTypes<typeof buttonProps>
+export const buttonEmits = {
+  click: (type?: string) => {}
+}
+
+export type ButtonProps = ExtractPropTypes<typeof buttonProps>
