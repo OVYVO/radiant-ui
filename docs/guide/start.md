@@ -6,7 +6,7 @@ lastUpdated: true
 
 # 快速开始
 
-本节将介绍如何在项目中使用组件库。
+本节将介绍如何在项目中使用Radiant-UI。
 
 ## 安装 {#installation}
 
@@ -83,4 +83,4 @@ export default {
 ## 规划
 
 - 解决按需自动引入问题
-- 解决样式依赖elment-plus引入问题
+- 解决elment-plus样式依赖引入问题
