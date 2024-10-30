@@ -35,6 +35,10 @@
   "jsdelivr": "radiant-ui.iife.js",
   "style": "theme-chalk/index.css",
   "sideEffects": ["theme-chalk/**/*.css", "theme-chalk/src/**/*.scss", "es/*/style/*", "lib/*/style/*"],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "peerDependencies": {
     "vue": "^3.4.31"
   },
