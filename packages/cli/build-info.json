@@ -1,5 +1,5 @@
 {
-  "name": "radiant-ui",
+  "name": "@ovyvo/radiant-ui",
   "version": "0.0.1",
   "description": "Radiant公共组件库",
   "keywords": ["component library", "ui framework", "vue", "vue3"],
