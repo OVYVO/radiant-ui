@@ -69,7 +69,7 @@ app.mount("#app")
 
 ```vue
 <template>
-  <ra-button>我是 RaButton</ra-button>
+  <ra-button>RaButton</ra-button>
 </template>
 <script>
 import { RaButton } from "@ovyvo/radiant-ui"
