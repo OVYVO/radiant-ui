@@ -3,7 +3,7 @@
     <img src="/logo.png" class="logo" alt="Vite logo" />
     <div class="title">Radiant组件库测试看板</div>
     <div class="preview-container">
-      <radiant-button>哈哈哈</radiant-button>
+      <ra-actbtn>哈哈哈</ra-actbtn>
     </div>
   </div>
 </template>
