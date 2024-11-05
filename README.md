@@ -6,11 +6,11 @@
   <a href="https://www.npmjs.com/package/@ovyvo/radiant-ui">
     <img src="https://img.shields.io/npm/v/@ovyvo/radiant-ui.svg">
   </a>
-  <a href="http://img.badgesize.io/https://unpkg.com/@ovyvo/radiant-ui?compression=gzip&label=gzip%20size:%20JS">
-    <img src="http://img.badgesize.io/https://unpkg.com/@ovyvo/radiant-ui?compression=gzip&label=gzip%20size:%20JS">
+  <a href="https://www.npmjs.com/package/@ovyvo/radiant-ui">
+    <img src="https://img.shields.io/badge/node-%20%3E%3D%2018-47c219" />
   </a>
-  <a href="http://img.badgesize.io/https://unpkg.com/@ovyvo/radiant-ui/dist/index.css?compression=gzip&label=gzip%20size:%20CSS">
-    <img src="http://img.badgesize.io/https://unpkg.com/@ovyvo/radiant-ui/theme-chalk/index.css?compression=gzip&label=gzip%20size:%20CSS">
+  <a href="https://npmcharts.com/compare/@ovyvo/radiant-ui?minimal=true">
+    <img src="https://img.shields.io/npm/dm/@ovyvo/radiant-ui.svg" />
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
