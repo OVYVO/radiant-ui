@@ -4,6 +4,8 @@ import { createApp } from "vue"
 import App from "./App.vue"
 import "./style.css"
 
+import "element-plus/theme-chalk/index.css"
+
 import Button from "@radiant-ui/components/button"
 import "@radiant-ui/theme-chalk"
 
