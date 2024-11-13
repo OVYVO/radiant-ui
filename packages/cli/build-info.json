@@ -13,7 +13,7 @@
     "url": "https://github.com/OVYVO/radiant-ui/issues"
   },
   "license": "MIT",
-  "main": "lib/index.cjs",
+  "main": "./jg-ui.umd.js",
   "module": "es/index.js",
   "types": "types/index.d.ts",
   "exports": {
@@ -29,7 +29,8 @@
     "./lib/*.js": {
       "types": "./types/*/src/*.d.ts",
       "require": "./lib/*.cjs"
-    }
+    },
+    "./*": "./*"
   },
   "unpkg": "radiant-ui.iife.js",
   "jsdelivr": "radiant-ui.iife.js",
