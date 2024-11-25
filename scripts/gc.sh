@@ -42,7 +42,7 @@ cat > $DIRNAME/src/$INPUT_NAME.vue <<EOF
 import { ${INPUT_NAME}Props } from './$INPUT_NAME'
 
 defineOptions({
-  name: 'radiant$NAME',
+  name: 'Ra$NAME',
 })
 
 const props = defineProps(${INPUT_NAME}Props)
@@ -58,21 +58,21 @@ export const ${INPUT_NAME}Props = {
   size: [Number, String] as PropType<number | string>
 } as const
 
-export type ${INPUT_NAME}Propr = ExtractPropTypes<typeof ${INPUT_NAME}Props>
+export type ${NAME}Propr = ExtractPropTypes<typeof ${INPUT_NAME}Props>
 EOF
 
 cat <<EOF >"$DIRNAME/index.ts"
 import { withInstall } from '@radiant-ui/utils'
 import _$NAME from './src/$INPUT_NAME.vue'
 
-const $NAME = withInstall(_$NAME)
-export default $NAME
+const Ra$NAME = withInstall(_$NAME)
+export default Ra$NAME
 
 export * from './src/$INPUT_NAME'
 
 declare module "vue" {
   export interface GlobalComponents {
-    radiant$NAME: typeof $NAME
+    Ra$NAME: typeof Ra$NAME
   }
 }
 
@@ -88,23 +88,22 @@ const AXIOM = 'Rem is the best girl'
 describe('$NAME.vue', () => {
   test('render test', () => {
     const wrapper = mount(() => <$NAME>{AXIOM}</$NAME>)
-
     expect(wrapper.text()).toEqual(AXIOM)
   })
 })
 EOF
 
 cat <<EOF >"$DIRNAME/style/css.ts"
-import '@radiant-ui/theme-chalk/radiant-$INPUT_NAME.css'
+import '@radiant-ui/theme-chalk/ra-$INPUT_NAME.css'
 
 EOF
 cat <<EOF >"$DIRNAME/style/index.ts"
-import '@radiant-ui/theme-chalk/radiant-$INPUT_NAME.css'
+import '@radiant-ui/theme-chalk/ra-$INPUT_NAME.css'
 
 EOF
 
 cat <<EOF >"$STYLENAME/$INPUT_NAME.scss"
-.radiant-$INPUT_NAME{
+.ra-$INPUT_NAME{
 
 }
 EOF
