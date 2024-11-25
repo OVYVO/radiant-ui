@@ -21,7 +21,7 @@ const buildThemeChalk = () => {
   const sass = gulpSass(dartSass)
   const noRaPrefixFile = /(index|base|display)/
   return src(path.resolve(__dirname, "src/*.scss"))
-    .pipe(sass.sync())
+    .pipe(sass.sync({ silenceDeprecations: ["legacy-js-api"] }))
     .pipe(autoprefixer({ cascade: false }))
     .pipe(cssnano())
     .pipe(
