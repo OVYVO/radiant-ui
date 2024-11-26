@@ -1,7 +1,7 @@
-import Button from "./button/index"
+import Actbtn from "./actbtn/index"
 
 declare module "vue" {
   export interface GlobalComponents {
-    RaButton: typeof Button
+    RaActbtn: typeof Actbtn
   }
 }

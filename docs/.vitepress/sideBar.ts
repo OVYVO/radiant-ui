@@ -11,7 +11,7 @@ const guideBarList = [
 const compBarList = [
   {
     text: "基础组件",
-    items: [{ text: "Actbtn按钮", link: "/comp/actBtn" }]
+    items: [{ text: "Actbtn按钮", link: "/comp/actbtn" }]
   }
   // {
   //   text: "页面组件",

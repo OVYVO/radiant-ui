@@ -1,5 +1,5 @@
 import type { App } from "vue"
-import RaActbtn from "./button"
+import RaActbtn from "./actbtn"
 
 const components = [RaActbtn]
 

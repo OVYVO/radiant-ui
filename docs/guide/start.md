@@ -22,12 +22,12 @@ lastUpdated: true
 
 ::: code-group
 
-```sh [npm]
-$ npm add @ovyvo/radiant-ui@latest
-```
-
 ```sh [pnpm]
 $ pnpm add @ovyvo/radiant-ui@latest
+```
+
+```sh [npm]
+$ npm add @ovyvo/radiant-ui@latest
 ```
 
 ```sh [yarn]
@@ -54,14 +54,14 @@ import "element-plus/dist/index.css"
 ```javascript
 // main.ts
 import { createApp } from "vue"
-import RadiantUI from "@ovyvo/radiant-ui"
-import "element-plus/dist/index.css"
-import "@ovyvo/radiant-ui/dist/index.css"
 import App from "./App.vue"
+import "element-plus/dist/index.css" // [!code focus]
+import RadiantUI from "@ovyvo/radiant-ui" // [!code focus]
+import "@ovyvo/radiant-ui/index.css" // [!code focus]
 
 const app = createApp(App)
 
-app.use(RadiantUI)
+app.use(RadiantUI) // [!code focus]
 app.mount("#app")
 ```
 
@@ -69,14 +69,12 @@ app.mount("#app")
 
 ```vue
 <template>
-  <ra-button>RaButton</ra-button>
+  <ra-actbtn></ra-button>
 </template>
-<script>
-import { RaButton } from "@ovyvo/radiant-ui"
-import "@ovyvo/radiant-ui/theme-chalk/src/ra-button.css"
-export default {
-  components: { RaButton }
-}
+
+<script setup>
+import { RaActbtn } from "@ovyvo/radiant-ui"
+import "@ovyvo/radiant-ui/theme-chalk/src/ra-actbtn.css"
 </script>
 ```
 
