@@ -1,5 +1,5 @@
 ---
-title: "actbutton"
+title: "actbtn"
 outline: deep
 lastUpdated: true
 ---
@@ -11,28 +11,45 @@ lastUpdated: true
 ## 基础用法
 
 <script setup>
-import RaActbtn from '@components/button/src/button.vue'
+import RaActbtn from '@components/actbtn/src/actbtn.vue'
+import { InfoFilled } from '@element-plus/icons-vue' 
 const propsData = [
   {
     params: "actType",
     desc:"按钮类型",
-    paramType:"String<'input' | 'export'>",
-    canEmpty:"false",
+    paramType:"Enum",
+    isRequired:"false",
     initValue:"input"
   },
   {
-    params: "suffix",
+    params: "prefix",
     desc:"按钮前缀",
     paramType:"String",
-    canEmpty:"false",
+    isRequired:"false",
+    initValue:"-"
+  },
+  {
+    params: "suffix",
+    desc:"按钮后缀",
+    paramType:"String",
+    isRequired:"false",
     initValue:"-"
   },
   {
     params: "exportAll",
     desc:"导出全部",
     paramType:"Boolean",
-    canEmpty:"false",
+    isRequired:"false",
     initValue:"-"
+  }
+]
+
+const eventData = [
+  {
+    name: "click",
+    desc: "点击事件",
+    type: "Function",
+    typeInf: "(type: ' ' | 'all' | 'current') => void"
   }
 ]
 
@@ -40,7 +57,7 @@ const propsData = [
 
 <ra-actbtn actType="input" type="danger"></ra-actbtn>
 <ra-actbtn actType="export" type="warning"></ra-actbtn>
-<ra-actbtn exportAll ></ra-actbtn>
+<ra-actbtn exportAll style="margin-left: 12px"></ra-actbtn>
 
 ::: code-group
 
@@ -50,23 +67,19 @@ const propsData = [
   <ra-actbtn actType="export" type="warning"></ra-actbtn>
   <ra-actbtn exportAll></ra-actbtn>
 </template>
-
-<script setup>
-import { RaActButton } from "radiant-ui"
-</script>
 ```
 
 :::
 
-## 添加前缀
+## 添加前(后)缀
 
-<ra-actbtn actType="input" suffix="手动"></ra-actbtn>
+<ra-actbtn actType="input" prefix="手动" suffix="列表"></ra-actbtn>
 
 ::: code-group
 
 ```vue [javascript]
 <template>
-  <ra-actbtn actType="input" suffix="手动"></ra-actbtn>
+  <ra-actbtn actType="input" prefix="手动" suffix="列表"></ra-actbtn>
 </template>
 ```
 
@@ -75,13 +88,37 @@ import { RaActButton } from "radiant-ui"
 ## 属性说明
 
 ::: tip
-导入导出按钮基于el-button组件开发，适用于el-button的基础属性可自动继承到act-btn组件
+导入导出按钮基于el-button组件开发，适用于el-button的基础属性可自动继承到actbtn组件
 :::
 
-<el-table :data="propsData" stripe>
+Actbtn属性:
+
+<el-table border :data="propsData" stripe>
   <el-table-column prop="params" label="参数"/>
   <el-table-column prop="desc" label="说明"/>
-  <el-table-column prop="paramType" label="类型" width="200"/>
-  <el-table-column prop="canEmpty" label="是否必填" />
+  <el-table-column prop="paramType" label="类型">
+    <template #default={row}>
+      {{row.paramType}}
+      <el-tooltip v-if="row.paramType == 'Enum'" content="'input' | 'output'" placement="bottom">
+        <el-icon><InfoFilled /></el-icon>
+      </el-tooltip>
+    </template>
+  </el-table-column>
+  <el-table-column prop="isRequired" label="是否必填" />
   <el-table-column prop="initValue" label="默认值" />
+</el-table>
+
+Actbtn事件:
+
+<el-table border :data="eventData" stripe>
+  <el-table-column prop="name" label="事件名"/>
+  <el-table-column prop="desc" label="说明"/>
+  <el-table-column prop="type" label="类型">
+    <template #default={row}>
+      {{row.type}}
+      <el-tooltip :content="row.typeInf" placement="bottom">
+        <el-icon><InfoFilled /></el-icon>
+      </el-tooltip>
+    </template>
+  </el-table-column>
 </el-table>

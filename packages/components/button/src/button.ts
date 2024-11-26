@@ -8,17 +8,17 @@ export const buttonProps = {
       return ["input", "export"].includes(value)
     }
   },
+  prefix: {
+    type: String as PropType<string>,
+    default: ""
+  },
   suffix: {
-    type: String as PropType<String>,
+    type: String as PropType<string>,
     default: ""
   },
   exportAll: {
-    type: Boolean as PropType<Boolean>
+    type: Boolean as PropType<boolean>
   }
 } as const
-
-export const buttonEmits = {
-  click: (type?: string) => {}
-}
 
 export type ButtonProps = ExtractPropTypes<typeof buttonProps>

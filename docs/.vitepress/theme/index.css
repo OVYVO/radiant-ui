@@ -25,3 +25,41 @@
 .el-button:focus-visible {
   outline: unset !important;
 }
+
+.el-table__row {
+  .el-table__cell {
+    .cell {
+      .el-icon {
+        margin-left: 2px;
+        position: relative;
+        bottom: -2px;
+      }
+    }
+  }
+}
+
+.dark .el-table {
+  --el-border-color-lighter: #363637;
+  --el-text-color-regular: #cfd3e1;
+  --el-text-color-secondary: #a3a6ad;
+  --el-fill-color-light: #262727;
+  --el-fill-color-lighter: "#1D1D1D";
+  --el-color-primary-light-9: rgb(24.4, 33.8, 43.5);
+  --el-bg-color: #141414;
+  --el-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, 0.72);
+  --el-fill-color-blank: transparent;
+
+  --el-table-border-color: var(--el-border-color-lighter);
+  --el-table-border: 1px solid var(--el-table-border-color);
+  --el-table-text-color: var(--el-text-color-regular);
+  --el-table-header-text-color: var(--el-text-color-secondary);
+  --el-table-row-hover-bg-color: var(--el-fill-color-light);
+  --el-table-current-row-bg-color: var(--el-color-primary-light-9);
+  --el-table-header-bg-color: var(--el-bg-color);
+  --el-table-fixed-box-shadow: var(--el-box-shadow-light);
+  --el-table-bg-color: var(--el-fill-color-blank);
+  --el-table-tr-bg-color: var(--el-bg-color);
+  --el-table-expanded-cell-bg-color: var(--el-fill-color-blank);
+  --el-table-fixed-left-column: inset 10px 0 10px -10px rgba(0, 0, 0, 0.15);
+  --el-table-fixed-right-column: inset -10px 0 10px -10px rgba(0, 0, 0, 0.15);
+}
