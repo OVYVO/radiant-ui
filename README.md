@@ -39,9 +39,9 @@ cnpm install @ovyvo/radiant-ui -S
 ```javascript
 // main.ts
 import { createApp } from "vue"
-import RadiantUI from "@ovyvo/radiant-ui"
 import "element-plus/dist/index.css"
-import "@ovyvo/radiant-ui/dist/index.css"
+import RadiantUI from "@ovyvo/radiant-ui"
+import "@ovyvo/radiant-ui/index.css"
 import App from "./App.vue"
 
 const app = createApp(App)
@@ -54,14 +54,12 @@ app.mount("#app")
 
 ```vue
 <template>
-  <ra-button>RaButton</ra-button>
+  <ra-actbtn></ra-actbtn>
 </template>
-<script>
-import { RaButton } from "@ovyvo/radiant-ui"
-import "@ovyvo/radiant-ui/theme-chalk/src/ra-button.css"
-export default {
-  components: { RaButton }
-}
+
+<script setup>
+import { RaActbtn } from "@ovyvo/radiant-ui"
+import "@ovyvo/radiant-ui/theme-chalk/src/ra-actbtn.css"
 </script>
 ```
 
