@@ -3,7 +3,7 @@ import { series, dest, src } from "gulp"
 import rename from "gulp-rename"
 
 import { run } from "./utils/process"
-import { cliPath, themeChalkPath, utilsPath, hooksPath, outPutDir } from "./utils/path"
+import { projRoot, cliPath, themeChalkPath, utilsPath, hooksPath, outPutDir } from "./utils/path"
 
 const buildUtils = async () => {
   await run("pnpm build:utils", utilsPath)
@@ -35,6 +35,9 @@ const copyPackage = () => {
 const copyLicense = async () => {
   return src("../../LICENSE").pipe(dest(outPutDir))
 }
+const copyReadme = () => {
+  return src(`${projRoot}/README.md`).pipe(dest(outPutDir))
+}
 
 export const build: TaskFunction = series(
   buildUtils,
@@ -44,7 +47,8 @@ export const build: TaskFunction = series(
   buildCjs,
   buildLib,
   copyPackage,
-  copyLicense
+  copyLicense,
+  copyReadme
 )
 
 export default build
