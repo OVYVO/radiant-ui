@@ -1,6 +1,6 @@
 {
   "name": "@ovyvo/radiant-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Radiant公共组件库",
   "keywords": ["component library", "ui framework", "vue", "vue3"],
   "author": "vue12306@163.com",
@@ -13,7 +13,7 @@
     "url": "https://github.com/OVYVO/radiant-ui/issues"
   },
   "license": "MIT",
-  "main": "./jg-ui.umd.js",
+  "main": "./radiant-ui.umd.js",
   "module": "es/index.js",
   "types": "types/index.d.ts",
   "exports": {
