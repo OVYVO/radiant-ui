@@ -3,7 +3,8 @@ const guideBarList = [
     text: "帮助",
     items: [
       { text: "快速开始", link: "/guide/start" },
-      { text: "开发指南", link: "/guide/develop" }
+      { text: "开发指南", link: "/guide/develop" },
+      { text: "更新记录", link: "/guide/log" }
     ]
   }
 ]
