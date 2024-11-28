@@ -60,7 +60,7 @@ pnpm docs:dev
 该命令用于创建新组件，根据终端提示填写相应信息，会自动添加组件文件夹，及所有文件。
 
 ```sh
-pnpm gen
+pnpm gen xxx
 ```
 
 ### 删除组件
@@ -70,7 +70,7 @@ pnpm gen
 :::
 
 ```sh
-pnpm del
+pnpm del xxx
 ```
 
 ## 版本管理

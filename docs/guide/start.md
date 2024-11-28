@@ -55,8 +55,9 @@ import "element-plus/dist/index.css"
 // main.ts
 import { createApp } from "vue"
 import App from "./App.vue"
-import "element-plus/dist/index.css" // [!code focus]
+
 import RadiantUI from "@ovyvo/radiant-ui" // [!code focus]
+import "element-plus/dist/index.css" // [!code focus]
 import "@ovyvo/radiant-ui/index.css" // [!code focus]
 
 const app = createApp(App)
