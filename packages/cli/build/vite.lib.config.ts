@@ -32,6 +32,7 @@ export default defineConfig({
     rollupOptions: {
       external: ["vue", "@radiant-ui/utils", "element-plus"],
       output: {
+        exports: "named",
         globals: {
           ["vue"]: "Vue",
           ["element-plus"]: "elementPlus",
