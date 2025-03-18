@@ -12,7 +12,7 @@ export default defineConfig({
   // https://vitepress.dev/reference/default-theme-config
   themeConfig: {
     siteTitle: "Radiant-UI",
-    logo: "/logo.png",
+    logo: "logo.png",
     nav,
     sidebar,
     outline: {
