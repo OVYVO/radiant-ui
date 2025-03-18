@@ -19,14 +19,14 @@ const clean = async () => {
 
 const buildThemeChalk = () => {
   const sass = gulpSass(dartSass)
-  const noRaPrefixFile = /(index|base|display)/
+  const noJgPrefixFile = /(index|base|display)/
   return src(path.resolve(__dirname, "src/*.scss"))
     .pipe(sass.sync({ silenceDeprecations: ["legacy-js-api"] }))
     .pipe(autoprefixer({ cascade: false }))
     .pipe(cssnano())
     .pipe(
       rename(path => {
-        if (!noRaPrefixFile.test(path.basename)) {
+        if (!noJgPrefixFile.test(path.basename)) {
           path.basename = `ra-${path.basename}`
         }
       })

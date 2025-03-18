@@ -1,0 +1,87 @@
+.ra-upload {
+  .el-upload-dragger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 178px;
+    padding: 0 50px;
+    &.is-dragover {
+      padding: 0 50px;
+    }
+    .el-icon--upload {
+      margin-bottom: 0;
+    }
+  }
+  .el-upload__info {
+    user-select: none;
+    margin-bottom: 16px;
+    display: flex;
+    font-size: 14px;
+    line-height: 14px;
+    .el-link {
+      width: auto !important;
+    }
+  }
+  .el-upload_tip {
+    line-height: 14px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #999999;
+  }
+  .el-upload__filelist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .el-upload__text {
+    margin-top: 10px;
+  }
+  .el-upload__text__info {
+    line-height: 14px;
+  }
+  .el-upload__text__sub {
+    font-size: 12px;
+    color: #999999;
+    line-height: 12px;
+    margin-top: 10px;
+  }
+  .el-upload__filelist__multiple {
+    margin-top: 10px;
+    .list-item {
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .el-upload_tip {
+        user-select: none;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        span {
+          margin-left: 4px;
+        }
+      }
+      & + .list-item {
+        margin-top: 6px;
+      }
+      &:hover {
+        background: #fcfcfc;
+        .el-upload_tip_btn {
+          .el-button:first-child {
+            display: none;
+          }
+          .el-button:last-child {
+            display: block;
+          }
+        }
+      }
+      .el-upload_tip_btn {
+        .el-button:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}

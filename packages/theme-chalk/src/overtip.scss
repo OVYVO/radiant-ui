@@ -1,0 +1,14 @@
+.ra-overtip {
+  span {
+    word-break: break-all;
+    white-space: break-spaces;
+    max-width: 300px;
+    display: inline-block;
+  }
+}
+.ellipsis-content {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}

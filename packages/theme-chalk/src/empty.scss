@@ -1,0 +1,30 @@
+.ra-empty {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  padding: 16px;
+
+  img {
+    width: 180px;
+    height: 130px;
+    pointer-events: none;
+  }
+
+  .title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+
+  .describe {
+    font-size: 14px;
+    color: #999;
+  }
+
+  .extra {
+    margin-top: 8px;
+  }
+}

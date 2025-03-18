@@ -1,0 +1,52 @@
+.ra-title {
+  display: flex;
+  align-items: flex-end;
+
+  .ra-title-title {
+    color: #303133;
+    position: relative;
+    text-indent: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #00706b;
+    user-select: none;
+    margin-right: 10px;
+    &::before {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 16px;
+      background: #00706b;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: 0 auto;
+    }
+  }
+  .ra-title-prefix {
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .ra-title-suffix {
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .ra-title-line {
+    flex: 1;
+    height: 1px;
+  }
+  .ra-title-line_show {
+    background: rgba(0, 125, 123, 0.3);
+  }
+  .ra-title-line_hidden {
+    background: transparent;
+  }
+}

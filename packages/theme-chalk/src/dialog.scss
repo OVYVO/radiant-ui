@@ -1,0 +1,42 @@
+.ra-dialog {
+  padding: 0 !important;
+  .el-dialog__header {
+    padding: 0 16px !important;
+    border-bottom: 1px solid #dedede;
+    .ra-dialog-header {
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .ra-dialog-title {
+        margin: 0;
+        user-select: none;
+        font-weight: 500;
+        font-size: 16px !important;
+      }
+      .ra-dialog-header_right {
+        display: flex;
+        align-items: center;
+        .el-icon {
+          font-size: 20px;
+        }
+      }
+    }
+    .el-dialog__headerbtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .el-dialog__body {
+    .ra-dialog-body {
+      overflow: hidden;
+      box-sizing: border-box;
+      padding: 30px;
+    }
+  }
+  .el-dialog__footer {
+    padding: 16px 30px !important;
+    border-top: 1px solid #dedede;
+  }
+}

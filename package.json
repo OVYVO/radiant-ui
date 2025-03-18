@@ -69,9 +69,6 @@
     "*.vue": [
       "eslint --fix",
       "prettier --write"
-    ],
-    "*.scss": [
-      "stylelint --fix"
     ]
   }
 }
