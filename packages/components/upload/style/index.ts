@@ -1,1 +1,1 @@
-import "@ra-ui/theme-chalk/ra-upload.scss"
+import "@radiant-ui/theme-chalk/ra-upload.scss"

@@ -1,4 +1,4 @@
-import { withInstall } from "@ra/ra-utils"
+import { withInstall } from "@radiant-ui/utils"
 import _Tag from "./src/tag.vue"
 
 const RaTag = withInstall(_Tag)

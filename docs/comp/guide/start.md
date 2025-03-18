@@ -20,29 +20,20 @@ lastUpdated: true
 - [Node.js](https://nodejs.org/) 18 及以上版本。
 - [@web/jg-plugin](http://192.168.100.91:82/web/jg-plugins) 0.0.28 及以上版本。
 
-::: tip
-安装组件库请于.npmrc文件请添加以下配置
-:::
-
-```javascript
-@jg:registry=http://192.168.100.91:82/api/v4/projects/76/packages/npm/
-//192.168.100.91:82/api/v4/projects/76/packages/npm/:_authToken=CT3JZtKHsVHAoD-5yoCc
-```
-
 ### 依赖安装 {#depinstall}
 
 ::: code-group
 
 ```sh [pnpm]
-$ pnpm add @jg/jg-ui@latest
+$ pnpm add radiant-ui@latest
 ```
 
 ```sh [npm]
-$ npm add @jg/jg-ui@latest
+$ npm add radiant-ui@latest
 ```
 
 ```sh [yarn]
-$ yarn add @jg/jg-ui@latest
+$ yarn add radiant-ui@latest
 ```
 
 :::
@@ -67,13 +58,13 @@ import "element-plus/dist/index.css"
 import { createApp } from "vue"
 import App from "./App.vue"
 
-import JgUI from "@jg/jg-ui" // [!code focus]
+import RadiantUI from "radiant-ui" // [!code focus]
 import "element-plus/dist/index.css" // [!code focus]
-import "@jg/jg-ui/index.css" // [!code focus]
+import "radiant-ui/index.css" // [!code focus]
 
 const app = createApp(App)
 
-app.use(JgUI) // [!code focus]
+app.use(RadiantUI) // [!code focus]
 app.mount("#app")
 ```
 
@@ -84,7 +75,7 @@ app.mount("#app")
   <jg-actbtn></jg-actbtn>
 </template>
 <script setup>
-import { JgActbtn } from "@jg/jg-ui"
-import "@jg/jg-ui/theme-chalk/src/jg-actbtn.css"
+import { JgActbtn } from "radiant-ui"
+import "radiant-ui/theme-chalk/src/jg-actbtn.css"
 </script>
 ```

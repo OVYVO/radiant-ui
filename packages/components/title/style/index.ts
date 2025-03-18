@@ -1,1 +1,1 @@
-import "@ra-ui/theme-chalk/ra-title.scss"
+import "@radiant-ui/theme-chalk/ra-title.scss"

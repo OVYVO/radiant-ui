@@ -1,4 +1,4 @@
-import { withInstall } from "@ra/ra-utils"
+import { withInstall } from "@radiant-ui/utils"
 import _Upload from "./src/upload.vue"
 
 const RaUpload = withInstall(_Upload)

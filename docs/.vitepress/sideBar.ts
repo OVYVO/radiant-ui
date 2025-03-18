@@ -18,10 +18,6 @@ const compBarList = [
       { text: "Title页头", link: "/comp/title" },
       { text: "Upload上传", link: "/comp/upload" }
     ]
-  },
-  {
-    text: "高阶组件",
-    items: [{ text: "ScrollSelect滚动加载", link: "/comp/scrollSelect" }]
   }
 ]
 

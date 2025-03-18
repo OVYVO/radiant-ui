@@ -27,7 +27,8 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        "@components": path.join(__dirname, "../../packages/components")
+        "@components": path.join(__dirname, "../../packages/components"),
+        "@css": path.join(__dirname, "../../packages/theme-chalk")
       }
     }
   },

@@ -1,4 +1,4 @@
-import { withInstall } from "@jg/jg-utils"
+import { withInstall } from "@radiant-ui/utils"
 import _ActBtn from "./src/actbtn.vue"
 
 const JgActbtn = withInstall(_ActBtn)

@@ -1,4 +1,4 @@
-import { withInstall } from "@ra/ra-utils"
+import { withInstall } from "@radiant-ui/utils"
 import _Dialog from "./src/dialog.vue"
 
 const RaDialog = withInstall(_Dialog)

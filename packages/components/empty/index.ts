@@ -1,4 +1,4 @@
-import { withInstall } from "@ra/ra-utils"
+import { withInstall } from "@radiant-ui/utils"
 import _Empty from "./src/empty.vue"
 
 const RaEmpty = withInstall(_Empty)
