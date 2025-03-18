@@ -19,9 +19,13 @@
     "stub": "unbuild --stub"
   },
   "peerDependencies": {
+    "axios": "^1.8.1",
     "vue": "3.4.35"
   },
   "devDependencies": {
     "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.4"
   }
 }

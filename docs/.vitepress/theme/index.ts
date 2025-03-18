@@ -1,11 +1,12 @@
 import DefaultTheme from "vitepress/theme"
 import ElementPlus from "element-plus"
 
-import "element-plus/dist/index.css"
 import "./index.css"
+import "@css/dist/index.css"
+import "element-plus/dist/index.css"
 
 export default {
-  ...DefaultTheme,
+  extends: DefaultTheme,
   enhanceApp({ app }) {
     app.use(ElementPlus)
   }
