@@ -48,7 +48,7 @@ export const responseInterceptorCatch = error => {
 
 ```javascript
 // @/service/index.js
-import { axiosUltra } from "@jg/jg-utils"
+import { axiosUltra } from "@radiant-ui/utils"
 
 import {
   requestInterceptors,

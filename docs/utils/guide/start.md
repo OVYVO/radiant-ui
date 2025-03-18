@@ -14,15 +14,15 @@ lastUpdated: true
 ::: code-group
 
 ```sh [pnpm]
-$ pnpm add @jg/jg-utils@latest
+$ pnpm add @radiant-ui/utils@latest
 ```
 
 ```sh [npm]
-$ npm add @jg/jg-utils@latest
+$ npm add @radiant-ui/utils@latest
 ```
 
 ```sh [yarn]
-$ yarn add @jg/jg-utils@latest
+$ yarn add @radiant-ui/utils@latest
 ```
 
 :::
@@ -33,7 +33,7 @@ $ yarn add @jg/jg-utils@latest
 
 ```vue
 <script setup>
-import { downFileFromBlob } from "@jg/jg-utils"
+import { downFileFromBlob } from "@radiant-ui/utils"
 
 const downloadFile = (url, fileName) => {
   downFileFromBlob(url, fileName)
