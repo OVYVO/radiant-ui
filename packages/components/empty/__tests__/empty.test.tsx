@@ -1,12 +1,12 @@
 import { mount } from "@vue/test-utils"
 import { describe, expect, test } from "vitest"
-import Button from "../src/actbtn.vue"
+import Empty from "../src/empty.vue"
 
 const AXIOM = "Rem is the best girl"
 
-describe("Button.vue", () => {
+describe("Empty.vue", () => {
   test("render test", () => {
-    const wrapper = mount(() => <Button>{AXIOM}</Button>)
+    const wrapper = mount(() => <Empty>{AXIOM}</Empty>)
 
     expect(wrapper.text()).toEqual(AXIOM)
   })

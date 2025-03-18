@@ -1,1 +1,1 @@
-import "@radiant-ui/theme-chalk/src/radiant-button.scss"
+import "@jg-ui/theme-chalk/src/jg-actbtn.scss"

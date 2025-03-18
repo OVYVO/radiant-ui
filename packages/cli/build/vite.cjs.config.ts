@@ -6,7 +6,7 @@ import { excludeFiles } from "../utils/pkg"
 import vue from "@vitejs/plugin-vue"
 import glob from "fast-glob"
 
-import { styleAliasPlugin } from "../plugin/style-alias"
+import { styleAliasPlugin } from "../plugin"
 
 const OUTDIR_PATH = resolve(projRoot, "dist/lib")
 const ENTRY_PATH = resolve(componentsPath)

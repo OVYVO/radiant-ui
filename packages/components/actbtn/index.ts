@@ -1,13 +1,11 @@
-import { withInstall } from "@radiant-ui/utils"
-import _Button from "./src/actbtn.vue"
+import { withInstall } from "@jg/jg-utils"
+import _ActBtn from "./src/actbtn.vue"
 
-const Button = withInstall(_Button)
-export default Button
-
-export * from "./src/actbtn"
+const JgActbtn = withInstall(_ActBtn)
+export default JgActbtn
 
 declare module "vue" {
   export interface GlobalComponents {
-    RaButton: typeof Button
+    JgActbtn: typeof JgActbtn
   }
 }
