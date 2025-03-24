@@ -43,7 +43,7 @@ const blackChars: string[] = [
 const escapeChar: string = "&Gamma;"
 
 /**
- * 转义字符串中的特殊字符
+ * ### 转义字符串中的特殊字符
  * @param {string} str - 需要转义的字符串
  * @returns 转义后的字符串
  */
@@ -53,7 +53,7 @@ export const escapeChars = (str: string): string => {
 }
 
 /**
- * 反转义字符串中的转义字符
+ * ### 反转义字符串中的转义字符
  * @param {string} str - 需要反转义的字符串
  * @returns 反转义后的字符串
  */
@@ -66,7 +66,7 @@ export const unescapeChars = (str: string): string => {
 }
 
 /**
- * 递归处理对象中的字符串，应用指定的处理器函数
+ * ### 递归处理对象中的字符串，应用指定的处理器函数
  * @param obj - 需要处理的对象或数组
  * @param processor - 处理字符串的函数
  * @returns 处理后的对象或数组

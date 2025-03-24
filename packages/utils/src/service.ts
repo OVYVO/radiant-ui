@@ -16,7 +16,7 @@ export class axiosUltra {
   private axiosInstance: AxiosInstance
 
   /**
-   * 构造函数，初始化 Axios 实例和拦截器
+   * ### 构造函数，初始化 Axios 实例和拦截器
    * @param options - Axios 配置选项
    */
   constructor(options: AxiosOptions) {
@@ -28,7 +28,7 @@ export class axiosUltra {
   }
 
   /**
-   * 初始化请求和响应拦截器
+   * ### 初始化请求和响应拦截器
    */
   private initInterceptors(): void {
     if (!this.interceptors) return
@@ -52,7 +52,7 @@ export class axiosUltra {
   }
 
   /**
-   * 发送 HTTP 请求
+   * ### 发送 HTTP 请求
    * @param reqConfig - 请求配置
    * @returns Promise 对象，解析为 AxiosResponse
    */

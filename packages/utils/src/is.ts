@@ -2,7 +2,7 @@ const is = (val: any, type: string): boolean => {
   return Object.prototype.toString.call(val) === `[object ${type}]`
 }
 /**
- * 检查给定值是否为空
+ * ### 检查给定值是否为空
  * @param {any} val - 要检查的值
  * @returns 如果值为空，返回 true；否则返回 false
  */
@@ -20,7 +20,7 @@ export const isEmpty = (val: any): boolean => {
 }
 
 /**
- * 检查当前环境是否为 Electron 环境
+ * ### 检查当前环境是否为 Electron 环境
  * @returns 如果当前环境是 Electron 环境，返回 true；否则返回 false
  */
 export const isElectron = ((): boolean => {
@@ -28,7 +28,7 @@ export const isElectron = ((): boolean => {
 })()
 
 /**
- * 检查给定的字符串是否为有效的 CIDR 表示法
+ * ### 检查给定的字符串是否为有效的 CIDR 表示法
  * @param {string} cidr - 要检查的 CIDR 字符串
  * @returns 如果字符串是有效的 CIDR 表示法，返回 true；否则返回 false
  */
@@ -45,7 +45,7 @@ export const isCIDR = (cidr: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效的IPV4
+ * ### 检查给定的字符串是否为有效的IPV4
  * @param {string} ipv4 - 要检查的 ipv4 字符串
  * @returns 如果字符串是有效的IPV4，返回 true；否则返回 false
  */
@@ -57,7 +57,7 @@ export const isIPV4 = (ipv4: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效的IPV6
+ * ### 检查给定的字符串是否为有效的IPV6
  * @param {string} ipv6 - 要检查的 ipv6 字符串
  * @returns 如果字符串是有效的IPV4，返回 true；否则返回 false
  */
@@ -68,7 +68,7 @@ export const isIPV6 = (ipv6: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效的IP
+ * ### 检查给定的字符串是否为有效的IP
  * @param {string} ip - 要检查的 ip 字符串
  * @returns 如果字符串是有效的IP表示法，返回 true；否则返回 false
  */
@@ -77,7 +77,7 @@ export const isIP = (ip: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效端口
+ * ### 检查给定的字符串是否为有效端口
  * @param {string} port - 要检查的port字符串
  * @returns 如果字符串是有效的Port表示法，返回 true；否则返回 false
  */
@@ -87,7 +87,7 @@ export const isPort = (port: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效Ipv4+端口
+ * ### 检查给定的字符串是否为有效Ipv4+端口
  * @param {string} ipWithPort - 要检查的ipv4+端口字符串
  * @returns 如果字符串是有效的Ipv4+端口，返回 true；否则返回 false
  */
@@ -97,7 +97,7 @@ export const isIPv4WithPort = (ipWithPort: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效的子网掩码
+ * ### 检查给定的字符串是否为有效的子网掩码
  * @param {string} mask - 要检查的ipv4+端口字符串
  * @returns 如果字符串是有效的子网掩码，返回 true；否则返回 false
  */
@@ -114,7 +114,7 @@ export const isMask = (mask: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效的IP集合
+ * ### 检查给定的字符串是否为有效的IP集合
  * @param {string} multipleIp - 要检查的ip集合
  * @returns 如果字符串是有效的IP集合，返回 true；否则返回 false
  */
@@ -130,7 +130,7 @@ export const isMultipleIp = (multipleIp: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效的Ip段
+ * ### 检查给定的字符串是否为有效的Ip段
  * @param {string} ipRange - 要检查的Ip段
  * @returns 如果字符串是有效的Ip段，返回 true；否则返回 false
  */
@@ -149,7 +149,7 @@ export const isIpRange = (ipRange: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效的Ip+Ip段
+ * ### 检查给定的字符串是否为有效的Ip+Ip段
  * @param {string} ipWithIpRange - 要检查的Ip+Ip段
  * @returns 如果字符串是有效的Ip+Ip段，返回 true；否则返回 false
  */
@@ -169,7 +169,7 @@ export const isIpWithIpRange = (ipWithIpRange: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效url
+ * ### 检查给定的字符串是否为有效url
  * @param {string} url - 要检查的telNum字符串
  * @returns 如果字符串是有效的座机号表示法，返回 true；否则返回 false
  */
@@ -179,7 +179,7 @@ export const isUrl = (url: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效手机号
+ * ### 检查给定的字符串是否为有效手机号
  * @param {string} phoneNum - 要检查的phoneNum字符串
  * @returns 如果字符串是有效的手机号表示法，返回 true；否则返回 false
  */
@@ -189,7 +189,7 @@ export const isPhoneNum = (phoneNum: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效座机号
+ * ### 检查给定的字符串是否为有效座机号
  * @param {string} telNum - 要检查的telNum字符串
  * @returns 如果字符串是有效的座机号表示法，返回 true；否则返回 false
  */
@@ -199,7 +199,7 @@ export const isTelNum = (telNum: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效联系方式
+ * ### 检查给定的字符串是否为有效联系方式
  * @param {string} contactNum - 要检查的telNum字符串
  * @returns 如果字符串是有效的座机号表示法，返回 true；否则返回 false
  */
@@ -208,7 +208,7 @@ export const isContactNum = (contactNum: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效邮箱
+ * ### 检查给定的字符串是否为有效邮箱
  * @param {string} email - 要检查的email字符串
  * @returns 如果字符串是有效的座机号表示法，返回 true；否则返回 false
  */
@@ -218,7 +218,7 @@ export const isEmail = (email: string): boolean => {
 }
 
 /**
- * 检查给定的字符串是否为有效身份证
+ * ### 检查给定的字符串是否为有效身份证
  * @param {string} id - 要检查的身份证字符串
  * @returns 如果字符串是有效的座机号表示法，返回 true；否则返回 false
  */
