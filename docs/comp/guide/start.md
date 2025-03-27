@@ -18,22 +18,21 @@ lastUpdated: true
 - [Element-plus](https://element-plus.org/zh-CN/) 2.8及以上版本
 - [Lodash](https://www.lodashjs.com/) 4.17.21及以上版本
 - [Node.js](https://nodejs.org/) 18 及以上版本。
-- [@web/jg-plugin](http://192.168.100.91:82/web/jg-plugins) 0.0.28 及以上版本。
 
 ### 依赖安装 {#depinstall}
 
 ::: code-group
 
 ```sh [pnpm]
-$ pnpm add radiant-ui@latest
+$ pnpm add @ovyvo/radiant-ui@latest
 ```
 
 ```sh [npm]
-$ npm add radiant-ui@latest
+$ npm add @ovyvo/radiant-ui@latest
 ```
 
 ```sh [yarn]
-$ yarn add radiant-ui@latest
+$ yarn add @ovyvo/radiant-ui@latest
 ```
 
 :::
@@ -58,9 +57,9 @@ import "element-plus/dist/index.css"
 import { createApp } from "vue"
 import App from "./App.vue"
 
-import RadiantUI from "radiant-ui" // [!code focus]
+import RadiantUI from "@ovyvo/radiant-ui" // [!code focus]
 import "element-plus/dist/index.css" // [!code focus]
-import "radiant-ui/index.css" // [!code focus]
+import "@ovyvo/radiant-ui/index.css" // [!code focus]
 
 const app = createApp(App)
 
@@ -72,10 +71,10 @@ app.mount("#app")
 
 ```vue
 <template>
-  <jg-actbtn></jg-actbtn>
+  <ra-actbtn></ra-actbtn>
 </template>
 <script setup>
-import { JgActbtn } from "radiant-ui"
-import "radiant-ui/theme-chalk/src/jg-actbtn.css"
+import { RaActbtn } from "@ovyvo/radiant-ui"
+import "@ovyvo/radiant-ui/theme-chalk/src/ra-actbtn.css"
 </script>
 ```

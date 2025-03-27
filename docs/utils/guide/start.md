@@ -14,15 +14,15 @@ lastUpdated: true
 ::: code-group
 
 ```sh [pnpm]
-$ pnpm add @radiant-ui/utils@latest
+$ pnpm add @ovyvo/ra-utils@latest
 ```
 
 ```sh [npm]
-$ npm add @radiant-ui/utils@latest
+$ npm add @ovyvo/ra-utils@latest
 ```
 
 ```sh [yarn]
-$ yarn add @radiant-ui/utils@latest
+$ yarn add @ovyvo/ra-utils@latest
 ```
 
 :::
@@ -33,7 +33,7 @@ $ yarn add @radiant-ui/utils@latest
 
 ```vue
 <script setup>
-import { downFileFromBlob } from "@radiant-ui/utils"
+import { downFileFromBlob } from "@ovyvo/ra-utils"
 
 const downloadFile = (url, fileName) => {
   downFileFromBlob(url, fileName)

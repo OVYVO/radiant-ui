@@ -17,7 +17,8 @@
     "build:hooks": "unbuild && gulp --require @esbuild-kit/cjs-loader"
   },
   "peerDependencies": {
-    "vue": "^3.4.31"
+    "vue": "^3.5.12",
+    "element-plus": "^2.8.7"
   },
   "devDependencies": {
     "unbuild": "^2.0.0"

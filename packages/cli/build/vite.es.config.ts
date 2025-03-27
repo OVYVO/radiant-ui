@@ -30,7 +30,7 @@ export default defineConfig({
       formats: ["es"]
     },
     rollupOptions: {
-      external: ["vue", "element-plus"],
+      external: ["vue", "element-plus", "lodash-es"],
       output: {
         preserveModules: true,
         preserveModulesRoot: ENTRY_PATH,

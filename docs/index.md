@@ -16,6 +16,9 @@ hero:
     - theme: brand
       text: 方法
       link: /utils/guide/start
+    - theme: brand
+      text: Hooks
+      link: /hooks/guide/start
 
 features:
   - icon: 📦️

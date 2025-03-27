@@ -41,7 +41,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
-    "vue": "^3.4.31"
+    "vue": "^3.4.31",
+    "lodash-es": "^4.17.21"
   },
   "dependencies": {},
   "devDependencies": {

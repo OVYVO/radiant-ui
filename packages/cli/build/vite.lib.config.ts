@@ -30,7 +30,7 @@ export default defineConfig({
       fileName: format => `radiant-ui.${format}.js`
     },
     rollupOptions: {
-      external: ["vue", "@radiant-ui/utils", "element-plus"],
+      external: ["vue", "@radiant-ui/utils", "element-plus", "lodash-es"],
       output: {
         exports: "named",
         globals: {

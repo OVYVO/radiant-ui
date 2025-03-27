@@ -14,13 +14,15 @@
     }
   },
   "scripts": {
-    "build:utils": "unbuild",
+    "build:utils": "unbuild && gulp --require @esbuild-kit/cjs-loader",
     "dev": "pnpm run stub",
     "stub": "unbuild --stub"
   },
   "peerDependencies": {
     "axios": "^1.8.1",
-    "vue": "3.4.35"
+    "vue": "3.4.35",
+    "gm-crypt": "^0.0.2",
+    "gm-crypto": "^0.1.12"
   },
   "devDependencies": {
     "unbuild": "^2.0.0"

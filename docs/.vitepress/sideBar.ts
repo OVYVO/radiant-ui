@@ -39,7 +39,22 @@ const utilsBarList = [
   }
 ]
 
+const hooksBarList = [
+  {
+    text: "帮助",
+    items: [
+      { text: "安装教程", link: "/hooks/guide/start" },
+      { text: "更新记录", link: "/hooks/guide/log" }
+    ]
+  },
+  {
+    text: "请求服务",
+    items: [{ text: "useList", link: "/hooks/useList" }]
+  }
+]
+
 export const sidebar = {
   "/comp/": compBarList,
-  "/utils/": utilsBarList
+  "/utils/": utilsBarList,
+  "/hooks/": hooksBarList
 }
