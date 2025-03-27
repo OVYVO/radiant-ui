@@ -1,4 +1,4 @@
-import { ref, onMounted, type Ref } from "vue"
+import { ref, onMounted, type Ref, shallowRef } from "vue"
 import { ElMessage } from "element-plus"
 
 interface ListOptions<T = any> {
@@ -36,18 +36,18 @@ export function useList<T = any>(
   }
 
   const params = ref<Record<string, any>>(query)
-  const tableData = ref<T[]>([])
+  const tableData = shallowRef<T[]>([])
   const totalNum = ref<number>(0)
   const loading = ref<boolean>(false)
 
   const handleResponse = (requestResult: ResponseResult<T>) => {
     if (pagination) {
       const { records, total } = requestResult
-      tableData.value = listHandler ? listHandler(records) : records // 确保类型一致
+      tableData.value = listHandler ? listHandler(records) : records
       totalNum.value = total || 0
     } else {
       const data = requestResult.records || requestResult
-      tableData.value = listHandler ? listHandler(data as T[]) : (data as T[]) // 类型断言
+      tableData.value = listHandler ? listHandler(data as T[]) : (data as T[])
     }
   }
 
