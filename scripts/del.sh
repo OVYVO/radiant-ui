@@ -14,6 +14,14 @@ if [ ! -d "$dir_to_delete" ]; then
     exit 1
 fi
 
+dir_to_delete_scss="$FILE_PATH/theme-chalk/src/$1.scss"
+
+if [ ! -f "$dir_to_delete_scss" ]; then
+    echo "Error: File '$dir_to_delete_scss' does not exist."
+    exit 1
+fi
+
 rm -rf "$dir_to_delete"
+rm -rf "$dir_to_delete_scss"
 
 echo "Directory '$dir_to_delete' has been deleted."
