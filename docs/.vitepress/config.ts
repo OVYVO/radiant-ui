@@ -6,13 +6,13 @@ import path from "path"
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/radiant-ui/",
-  title: "前端组件库",
-  description: "前端组件库",
+  title: "前端物料库",
+  description: "前端物料库",
   head: [["link", { rel: "icon", href: "/radiant-ui/logo.png" }]],
   // https://vitepress.dev/reference/default-theme-config
   themeConfig: {
-    siteTitle: "Radiant-UI",
-    logo: "logo.png",
+    siteTitle: "Radiant-Frontend",
+    logo: "/logo.png",
     nav,
     sidebar,
     outline: {

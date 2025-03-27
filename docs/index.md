@@ -3,16 +3,19 @@
 layout: home
 
 hero:
-  name: "Radiant-UI"
-  text: "前端组件库"
-  tagline: 基于Vue3，适用于PC端网页项目
+  name: "Radiant-Frontend"
+  text: "前端物料库"
+  tagline: 基于Vue3、Typescript开发的共享物料
   image:
     src: /indexBac.png
-    alt: Radiant-UI
+    alt: Radiant-Frontend
   actions:
     - theme: brand
-      text: 快速上手
+      text: 组件
       link: /comp/guide/start
+    - theme: brand
+      text: 方法
+      link: /utils/guide/start
 
 features:
   - icon: 📦️
