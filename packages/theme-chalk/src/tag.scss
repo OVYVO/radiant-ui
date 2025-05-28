@@ -1,75 +1,37 @@
-$tag-padding: 4px 8px;
-$tag-margin-right: 8px;
-$tag-font-size: 12px;
-$tag-border-radius: 0px;
-$tag-transition: all 0.3s ease;
-
-$default: #2b80b9;
-$green: #60c888;
-$yellow: #eabb00;
-$orange: #ffa800;
-$red: #f56c6c;
-$gray: #999999;
-$blue: #5c9fee;
-$purple: #9c5cee;
-
-$colorList: (
-  default: $default,
-  green: $green,
-  yellow: $yellow,
-  orange: $orange,
-  red: $red,
-  gray: $gray,
-  blue: $blue,
-  purple: $purple
-);
-
 .ra-tag {
-  display: inline-flex;
-  width: fit-content;
-  padding: $tag-padding;
-  font-size: $tag-font-size;
-  border-radius: $tag-border-radius;
-  user-select: none;
-  transition: $tag-transition;
-  box-sizing: border-box;
-  align-items: center;
-  line-height: 1 !important;
-  @each $color, $value in $colorList {
-    &-color__#{"" + $color} {
-      &.ra-tag-effect {
-        &__light {
-          color: $value;
-          background-color: rgba($value, 15%);
-        }
-
-        &__dark {
-          color: #fff;
-          background-color: $value;
-        }
-
-        &__dot {
-          position: relative;
-          padding-left: 20px;
-          color: $value;
-
-          &::before {
-            content: "";
-            position: absolute;
-            left: 8px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            background-color: $value;
-          }
-        }
-      }
-    }
-
+  .el-tag__content {
+    line-height: 14px;
+    user-select: none;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .el-icon {
+    color: var(--mainColor) !important;
     &:hover {
-      opacity: 0.9;
+      color: #fff !important;
+      background-color: var(--mainColor) !important;
+    }
+  }
+  &.dot-effect {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    position: relative;
+    .el-tag__content {
+      .dot {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        display: block;
+        width: 4px;
+        height: 4px;
+        margin-right: 6px;
+        border-radius: 50%;
+        background-color: var(--mainColor) !important;
+      }
     }
   }
 }

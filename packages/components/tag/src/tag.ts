@@ -1,17 +1,28 @@
 import { ExtractPropTypes, PropType } from "vue"
 
 export const tagProps = {
-  color: {
-    type: String as PropType<"default" | "green" | "yellow" | "orange" | "red" | "gray" | "blue" | "purple">,
-    default: "default"
+  type: {
+    type: String as PropType<
+      | "primary"
+      | "primary_dark"
+      | "success"
+      | "info"
+      | "info_purple"
+      | "info_lackblue"
+      | "warning"
+      | "warning_dark"
+      | "danger"
+      | "danger_dark"
+    >,
+    default: "primary"
   },
-  borderRadius: {
+  maxWidth: {
     type: [Number, String] as PropType<number | string>,
-    default: 0
+    default: "100%"
   },
   effect: {
-    type: String as PropType<"dark" | "light" | "dot">,
-    default: "light"
+    type: String as PropType<"dot" | "">,
+    default: ""
   },
   cursor: {
     type: Boolean as PropType<boolean>,
