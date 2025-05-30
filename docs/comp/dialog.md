@@ -60,7 +60,7 @@ const propsData = [
   {
     params: "maxHeight",
     desc:"body最大高度",
-    paramType:"[Number|String]",
+    paramType:"Number",
     isRequired:"false",
     initValue:"800"
   },
