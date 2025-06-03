@@ -1,0 +1,15 @@
+.ra-psdinput {
+  .el-input__wrapper {
+    .el-input__suffix {
+      .el-input__suffix-inner {
+        span {
+          cursor: pointer;
+          .el-icon {
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+}

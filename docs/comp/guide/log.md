@@ -9,6 +9,11 @@ lastUpdated: true
 <script setup>
 const updateList = [
   {
+    date: "2025/6/3",
+    version: '版本V0.0.3',
+    desc:'新增：RaPsdinput组件'
+  },
+  {
     date: "2025/5/28",
     version: '版本V0.0.3',
     desc:'重构：RaTag组件'

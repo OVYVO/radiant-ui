@@ -6,10 +6,11 @@ import RaDialog from "./dialog"
 import RaEmpty from "./empty"
 import RaTitle from "./title"
 import RaUpload from "./upload"
+import RaPsdinput from "./psdinput"
 
-const compList = [RaActbtn, RaTag, RaOvertip, RaDialog, RaEmpty, RaTitle, RaUpload]
+const compList = [RaActbtn, RaTag, RaOvertip, RaDialog, RaEmpty, RaTitle, RaUpload, RaPsdinput]
 
-export { RaActbtn, RaTag, RaOvertip, RaDialog, RaEmpty, RaTitle, RaUpload }
+export { RaActbtn, RaTag, RaOvertip, RaDialog, RaEmpty, RaTitle, RaUpload, RaPsdinput }
 
 export default {
   install: (app: App) => {

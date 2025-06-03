@@ -5,6 +5,7 @@ import RaDialog from "./dialog/index"
 import RaEmpty from "./empty/index"
 import RaTitle from "./title/index"
 import RaUpload from "./upload/index"
+import RaPsdinput from "./psdinput/index"
 
 declare module "vue" {
   export interface GlobalComponents {
@@ -15,5 +16,6 @@ declare module "vue" {
     RaEmpty: typeof RaEmpty
     RaTitle: typeof RaTitle
     RaUpload: typeof RaUpload
+    RaPsdinput: typeof RaPsdinput
   }
 }

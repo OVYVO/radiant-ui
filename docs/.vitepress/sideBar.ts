@@ -16,7 +16,8 @@ const compBarList = [
       { text: "Dialog弹窗", link: "/comp/dialog" },
       { text: "Empty空状态", link: "/comp/empty" },
       { text: "Title页头", link: "/comp/title" },
-      { text: "Upload上传", link: "/comp/upload" }
+      { text: "Upload上传", link: "/comp/upload" },
+      { text: "PsdInput密码输入", link: "/comp/psdinput" }
     ]
   }
 ]
