@@ -24,6 +24,6 @@
     "types": ["node"],
     "baseUrl": "."
   },
-  "include": ["global.d.ts", "**/*.ts"],
-  "exclude": ["**/__tests__/*"]
+  "include": ["global.d.ts", "images.d.ts", "**/*.ts"],
+  "exclude": ["**/__tests__/*", "**/style"]
 }
