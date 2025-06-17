@@ -31,5 +31,3 @@ const emits = defineEmits<{
   (e: "click", type: String): void
 }>()
 </script>
-
-<style lang="scss" scoped></style>

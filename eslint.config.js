@@ -11,7 +11,7 @@ export default [
   ...tseslint.configs.recommended,
   ...pluginVue.configs["flat/essential"],
   {
-    files: ["**/*.vue"],
+    files: ["packages/components/**/*.vue"],
     languageOptions: { parser: vueeslint.parser, parserOptions: { parser: tseslint.parser } },
     rules: {
       "vue/block-lang": [
@@ -34,7 +34,13 @@ export default [
           element: "style",
           message: "Do not use <style> block in this project."
         }
-      ],
+      ]
+    }
+  },
+  {
+    files: ["**/*.vue"],
+    languageOptions: { parser: vueeslint.parser, parserOptions: { parser: tseslint.parser } },
+    rules: {
       "vue/html-self-closing": "off",
       "vue/multi-word-component-names": "off",
       "vue/max-attributes-per-line": "off",
