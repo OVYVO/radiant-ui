@@ -14,6 +14,27 @@ export default [
     files: ["**/*.vue"],
     languageOptions: { parser: vueeslint.parser, parserOptions: { parser: tseslint.parser } },
     rules: {
+      "vue/block-lang": [
+        "error",
+        {
+          script: {
+            lang: "ts"
+          }
+        }
+      ],
+      "vue/block-order": [
+        "error",
+        {
+          order: ["template", "script"]
+        }
+      ],
+      "vue/no-restricted-block": [
+        "error",
+        {
+          element: "style",
+          message: "Do not use <style> block in this project."
+        }
+      ],
       "vue/html-self-closing": "off",
       "vue/multi-word-component-names": "off",
       "vue/max-attributes-per-line": "off",
