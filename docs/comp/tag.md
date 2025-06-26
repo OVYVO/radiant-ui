@@ -78,17 +78,16 @@ const slotData = [
 
 ```vue [javascript]
 <template>
-  <ra-tag type="primary">default-tag</ra-tag>
-  <ra-tag type="primary_dark">green-tag</ra-tag>
-  <ra-tag type="success">yellow-tag</ra-tag>
-  <ra-tag type="info">orange-tag</ra-tag>
-  <ra-tag type="info_purple">red-tag</ra-tag>
-  <ra-tag type="info_lackblue">gray-tag</ra-tag>
-  <ra-tag type="warning">blue-tag</ra-tag>
-  <ra-tag type="warning_dark">purple-tag</ra-tag>
-  <ra-tag type="danger">blue-tag</ra-tag>
-  <ra-tag type="danger_dark">purple-tag</ra-tag>
-  <ra-tag type="info_purple" effect="dot">dot-tag</ra-tag>
+  <ra-tag type="primary">primary-tag</ra-tag>
+  <ra-tag type="primary_dark">primary_dark-tag</ra-tag>
+  <ra-tag type="success">success-tag</ra-tag>
+  <ra-tag type="info">info-tag</ra-tag>
+  <ra-tag type="info_purple">info_purple-tag</ra-tag>
+  <ra-tag type="info_lackblue">info_lackblue-tag</ra-tag>
+  <ra-tag type="warning">warning-tag</ra-tag>
+  <ra-tag type="warning_dark">warning_dark-tag</ra-tag>
+  <ra-tag type="danger">danger-tag</ra-tag>
+  <ra-tag type="danger_dark">danger_dark-tag</ra-tag>
 </template>
 ```
 
