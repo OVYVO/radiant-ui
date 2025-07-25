@@ -54,8 +54,26 @@ const hooksBarList = [
   }
 ]
 
+const pluginBarList = [
+  {
+    text: "帮助",
+    items: [
+      { text: "快速开始", link: "/plugins/guide/start" },
+      { text: "更新记录", link: "/plugins/guide/log" }
+    ]
+  },
+  {
+    text: "构建插件",
+    items: [
+      { text: "copyPkg2Dist", link: "/plugins/copyPkg2Dist" },
+      { text: "buildEndZipped", link: "/plugins/buildEndZipped" }
+    ]
+  }
+]
+
 export const sidebar = {
   "/comp/": compBarList,
   "/utils/": utilsBarList,
-  "/hooks/": hooksBarList
+  "/hooks/": hooksBarList,
+  "/plugins/": pluginBarList
 }
