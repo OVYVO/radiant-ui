@@ -23,7 +23,7 @@ lastUpdated: true
 ## vite.config.js配置
 
 ```javascript
-import copyPkg2Dist from "@ovyvo/vite-plugins/copyPkg2Dist"
+import copyPkg2Dist from "@jg/jg-plugins/copyPkg2Dist"
 
 export default defineConfig(({ mode }) => {
   return {
@@ -43,7 +43,7 @@ export default defineConfig(({ mode }) => {
 :::
 
 ```javascript
-import copyPkg2Dist from "@ovyvo/vite-plugins/copyPkg2Dist"
+import copyPkg2Dist from "@jg/jg-plugins/copyPkg2Dist"
 
 export default defineConfig(({ mode }) => {
   return {
@@ -61,7 +61,7 @@ export default defineConfig(({ mode }) => {
 > 插件接受一个`fileName`配置字段，类型为String。用于自定义信息存储的文件名。目前强制文件名类型为json，请勿尝试其他文件类型，否则插件将无法工作。如不配置该字段，默认输出文件名为`package.json`
 
 ```javascript
-import copyPkg2Dist from "@ovyvo/vite-plugins/copyPkg2Dist"
+import copyPkg2Dist from "@jg/jg-plugins/copyPkg2Dist"
 
 export default defineConfig(({ mode }) => {
   return {
@@ -84,7 +84,7 @@ export default defineConfig(({ mode }) => {
 :::
 
 ```javascript
-import copyPkg2Dist from "@ovyvo/vite-plugins/copyPkg2Dist"
+import copyPkg2Dist from "@jg/jg-plugins/copyPkg2Dist"
 
 export default defineConfig(({ mode }) => {
   return {

@@ -8,6 +8,14 @@ lastUpdated: true
 
 该插件用于自动将构建产物打包成tar.gz压缩包,并提供上传构建产物至AliOSS能力。
 
+## 依赖安装
+
+> 该插件核心依赖`archiver`、`zlib`、`ali-oss`库，若已安装请忽略。
+
+```sh
+pnpm add archiver zlib ali-oss -D
+```
+
 ## package.json配置
 
 > 该插件仅会响应`mode`为`prod`的打包模式，建议为prod打包配置一条专属命令。
@@ -15,7 +23,7 @@ lastUpdated: true
 ```json
 {
   "scripts": {
-    "build:prod": "rm -rf dist && pnpm build:electron && pnpm online --mode prod"
+    "build:prod": "rm -rf dist && pnpm build:electron && vite build --mode online"
   }
 }
 ```
@@ -23,7 +31,7 @@ lastUpdated: true
 ## vite.config.js配置
 
 ```javascript
-import buildEndZipped from "@ovyvo/vite-plugins/buildEndZipped"
+import buildEndZipped from "@jg/jg-plugins/buildEndZipped"
 
 export default defineConfig(({ mode }) => {
   return {
@@ -35,22 +43,24 @@ export default defineConfig(({ mode }) => {
 ## AliOSS上传
 
 - 插件接受一个`needUpload`配置字段，类型为Boolean。配置为true的情况下，会在构建流程结束后自动将打包好的产物上传至AliOSS；配置为false则仅执行打包。默认值为：true
-
-- 插件接受一个`target_oss_object`配置字段，类型为String。此配置仅在`needUpload`为true时生效，用于配置上传至OSS的目标对象。默认值为："jg-web-test"
+- 插件接受一个`needBuildElectron`配置字段，类型为Boolean。用于兼容普通项目静态资源包上传，为true将执行Electron构建产物的压缩打包，如项目未配置Electron打包流程，请谨慎使用！默认值为：true
+- 插件接受一个`proShortName`配置字段，类型为String。用于区分不同项目的上传地址；默认值为：""
+- 插件接受一个`targetOssObject`配置字段，类型为String。此配置仅在`needUpload`为true时生效，用于配置上传至OSS的目标对象。默认值为：""
 
 :::tip 🔊🔊🔊说明
 请注意：开启Upload功能请务必保证已在您的本地环境成功添加`OSS_ACCESS_KEY_ID`及`OSS_ACCESS_KEY_SECRET`环境变量，这将影响您的上传操作，如何添加环境变量请参考下文。
 :::
 
 ```javascript
-import buildEndZipped from "@ovyvo/vite-plugins"
+import buildEndZipped from "@jg/jg-plugins/buildEndZipped"
 
 export default defineConfig(({ mode }) => {
   return {
     plugins: [
       buildEndZipped({
         needUpload: true,
-        target_oss_object: "jg-web-test"
+        proShortName: "pmg",
+        targetOssObject: "pmg/main-server"
       })
     ]
   }
