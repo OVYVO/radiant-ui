@@ -43,7 +43,7 @@ export default defineConfig(({ mode }) => {
 ## AliOSS上传
 
 - 插件接受一个`needUpload`配置字段，类型为Boolean。配置为true的情况下，会在构建流程结束后自动将打包好的产物上传至AliOSS；配置为false则仅执行打包。默认值为：true
-- 插件接受一个`needBuildElectron`配置字段，类型为Boolean。用于兼容普通项目静态资源包上传，为true将执行Electron构建产物的压缩打包，如项目未配置Electron打包流程，请谨慎使用！默认值为：true
+- 插件接受一个`needBuildElectron`配置字段，类型为Boolean。用于兼容普通项目静态资源包上传，为true将执行Electron构建产物的压缩打包，如项目未配置Electron打包流程，应谨慎使用！默认值为：true
 - 插件接受一个`proShortName`配置字段，类型为String。用于区分不同项目的上传地址；默认值为：""
 - 插件接受一个`targetOssObject`配置字段，类型为String。此配置仅在`needUpload`为true时生效，用于配置上传至OSS的目标对象。默认值为：""
 
