@@ -25,7 +25,9 @@ const compStyle = computed<any>(() => {
   return {
     "-webkit-line-clamp": props.line,
     "-webkit-box-orient": "vertical",
-    display: "-webkit-box"
+    display: "-webkit-box",
+    wordBreak: "break-all",
+    overflowWrap: "break-word"
   }
 })
 
