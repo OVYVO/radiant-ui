@@ -1,7 +1,6 @@
 // 导入包的名称和前缀常量
-import { PKG_NAME, PKG_PREFIX } from "./style-alias"
+import { PKG_NAME } from "./style-alias"
 import { readdirSync } from "fs"
-import path from "path"
 import { componentsPath } from "../utils/path"
 
 // 兼容性处理：如果 unplugin-vue-components 不存在，则定义 ComponentResolver 类型
