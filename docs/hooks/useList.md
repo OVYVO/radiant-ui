@@ -142,7 +142,32 @@ const { tableData, queryForm } = useList(
 </script>
 ```
 
-### 5.请求回调
+### 5.参数处理
+
+> 有些场景需要对请求参数做一些处理，例如参数结构、参数清洗等，此时可以选择传入回调函数来达成这一目的，该函数参数为绑定的参数对象。
+
+```vue {10-16}
+<template>...</template>
+
+<script setup>
+import { useList } from "@hooks/useList.js"
+import { getDemoList } from "@/api/demo.js"
+
+const { tableData, queryForm } = useList(
+  getDemoList,
+  { pageNum: 1, pageSize: 12 },
+  {
+    queryHandler: params => {
+      params.time = dayjs(params.time).format("YYYY-MM-DD")
+      params.orgId = [params.orgId]
+      return params
+    }
+  }
+)
+</script>
+```
+
+### 6.请求回调
 
 > 为支持列表请求后续事件处理，提供onSuccess、onError两个回调函数以供使用。
 
