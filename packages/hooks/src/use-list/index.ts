@@ -6,6 +6,7 @@ interface ListOptions<T = any> {
   immediate?: boolean
   exclude?: string[]
   listHandler?: (data: T[]) => T[]
+  queryHandler?: (query: Record<string, any>) => Record<string, any>
   onSuccess?: () => void
   onError?: () => void
 }
@@ -26,6 +27,7 @@ export function useList<T = any>(
     immediate = true,
     exclude = [],
     listHandler = null, // 默认值为 null
+    queryHandler = null,
     onSuccess = null,
     onError = null
   } = options
@@ -60,7 +62,11 @@ export function useList<T = any>(
   const getList = async () => {
     loading.value = true
     try {
-      const response = await apiRequest(params.value)
+      let requestParams = params.value
+      if (queryHandler) {
+        requestParams = queryHandler(params.value)
+      }
+      const response = await apiRequest(requestParams)
       handleResponse(response)
       if (onSuccess) {
         onSuccess()
