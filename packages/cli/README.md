@@ -19,11 +19,11 @@ npm install unplugin-vue-components unplugin-auto-import -D
 在你的 `vite.config.ts` 文件中添加以下配置：
 
 ```ts
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import { resolve } from '@radiant-ui/cli/plugin'
+import { defineConfig } from "vite"
+import vue from "@vitejs/plugin-vue"
+import AutoImport from "unplugin-auto-import/vite"
+import Components from "unplugin-vue-components/vite"
+import { resolve } from "@radiant-ui/cli/plugin"
 
 export default defineConfig({
   plugins: [
@@ -32,9 +32,11 @@ export default defineConfig({
       resolvers: [resolve()]
     }),
     Components({
-      resolvers: [resolve({
-        importStyle: 'css' // 或者 'scss' 如果你想使用 SCSS 样式
-      })]
+      resolvers: [
+        resolve({
+          importStyle: "css" // 或者 'scss' 如果你想使用 SCSS 样式
+        })
+      ]
     })
   ]
 })
@@ -45,9 +47,9 @@ export default defineConfig({
 如果你使用 Webpack，可以这样配置：
 
 ```js
-import AutoImport from 'unplugin-auto-import/webpack'
-import Components from 'unplugin-vue-components/webpack'
-import { resolve } from '@radiant-ui/cli/plugin'
+import AutoImport from "unplugin-auto-import/webpack"
+import Components from "unplugin-vue-components/webpack"
+import { resolve } from "@radiant-ui/cli/plugin"
 
 export default {
   plugins: [
@@ -55,9 +57,11 @@ export default {
       resolvers: [resolve()]
     }),
     Components({
-      resolvers: [resolve({
-        importStyle: 'css'
-      })]
+      resolvers: [
+        resolve({
+          importStyle: "css"
+        })
+      ]
     })
   ]
 }
@@ -79,11 +83,13 @@ export default {
 
 ```ts
 Components({
-  resolvers: [resolve({
-    importStyle: 'scss',
-    ssr: false,
-    exclude: /^(MyExclude)/
-  })]
+  resolvers: [
+    resolve({
+      importStyle: "scss",
+      ssr: false,
+      exclude: /^(MyExclude)/
+    })
+  ]
 })
 ```
 
